@@ -14,12 +14,13 @@ nav:
   - Home: index.md
   - Front-end:
       - Getting Started: frontend/Getting Started.md
-      - HTML: frontend/html.md
-      - CSS: frontend/css.md
+      - HTML: frontend/html/html.md
+      - CSS: frontend/css/css.md
       
   - Networking (CCNA):
       - Getting Started: networking/Getting Started.md
-      - CCNA: networking/ccnaintro.md
+      - CCNA: networking/notes/ccnaintro.md
+      - Labs: networking/labs/labs.md
   - About:
       - Notes to Reader: about/notes.md
 
@@ -37,11 +38,3 @@ markdown_extensions:
   - admonition
   - pymdownx.tabbed:
       alternate_style: true
-
-plugins:
-  - search
-  - auto-refresh-build-pages:
-      update_message: "The page has been updated. Do you want to reload?"
-      yes_button_text: "Yes"
-      no_button_text: "No"
-      check_interval_seconds: 60

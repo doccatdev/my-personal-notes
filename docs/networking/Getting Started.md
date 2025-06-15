@@ -4,6 +4,6 @@ Catatan ini berisi materi mengenai sertifikasi CCNA 200-301. Alasan utama saya m
 
 ## Daftar Isi
 
-1. [Catatan CNNA](/networking/ccnaintro/)
-1. [Labs](/networking/labs/)
-1. [Reference](/networking/reference/)
+1. [Catatan CNNA](notes/ccnaintro/)
+1. [Labs](labs/labs.md)
+1. [Reference](reference/reference.md)
