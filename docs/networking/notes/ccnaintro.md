@@ -14,12 +14,12 @@ _Network_ (_computer network_) adalah jaringan yang menghubungkan komputer satu 
 ### Type of Network Devices
 
 #### Client-Server
-![Client-Server](/networking/assets/img/client-server.PNG)
+![Client-Server](../assets/img/client-server.PNG)
 
 Client disini sebagai _device_ yang mengakses / meminta layanan kepada _server_. _Server_ adalah sebuah _device_ yang menyediakan layanan untuk _client_
 
 #### Switch
-![Switch](/networking/assets/img/switch.PNG)
+![Switch](../assets/img/switch.PNG)
 
 _Switch_ adalah sebuah perangkat yang dapat menghubungkan beberapa _device_ (PC, Printer, Server, dll) agar dapat berhubungan dan berkomunikasi satu sama lain. Perangkat yang terkoneksi melalui _switch_ dapat berkomunikasi satu sama lain melalui _switch_
 
@@ -27,7 +27,7 @@ _Switch_ adalah sebuah perangkat yang dapat menghubungkan beberapa _device_ (PC,
     _Switch_ tidak dapat menyediakan layanan konektivitas antar LAN atau jaringan external, untuk melakukan hal tersebut dibutuhkan _device_ lain.
 
 #### Router
-![Router](/networking/assets/img/router.PNG)
+![Router](../assets/img/router.png)
 
 Router adalah sebuah perangkat yang menyediakan layanan agar LAN dapat berkomunikasi dengan jaringan eksternal seperti internet.
 
@@ -35,7 +35,7 @@ Router adalah sebuah perangkat yang menyediakan layanan agar LAN dapat berkomuni
     _Wireless Router_ (_Wi-Fi_ / _home router_) adalah perangkat multifungsi yang menggabungkan _router_, _switch_, _wireless access point_, dan _firewall_ dalam satu perangkat. 
 
 #### Firewall
-![Firewall](/networking/assets/img/firewall.PNG)
+![Firewall](../assets/img/firewall.PNG)
 
 _Firewall_ adalah sistem yang berfungsi untuk memantau _traffic_ jaringan yang masuk atau keluar ke perangkat host. Sistem ini kemudian dapat menentukan apakah _traffic_ tersebut diizinkan atau diblokir berdasarkan serangkaian aturan yang telah ditetapkan.
 

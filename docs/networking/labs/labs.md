@@ -22,7 +22,7 @@
 
 
 !!! example output "Lab day 1"
-![labs_day 1](/networking/assets/img/labs_day1.PNG)
+![labs_day 1](../assets/img/labs_day1.PNG)
 
 
 !!! reference "Source Video"

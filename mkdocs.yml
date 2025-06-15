@@ -16,6 +16,7 @@ nav:
       - Getting Started: frontend/Getting Started.md
       - HTML: frontend/html/html.md
       - CSS: frontend/css/css.md
+      - Javascript: frontend/javascript/javascript.md
       
   - Networking (CCNA):
       - Getting Started: networking/Getting Started.md

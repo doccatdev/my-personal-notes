@@ -3,7 +3,7 @@
 Cascading Style Sheet adalah standar W3C untuk mendefinisikan penyajian (_presentation_) dokumen yang ditulis dalam HTML. Penyajian ini mengacu pada cara dokumen disampaikan kepada pengguna, apakah di layar komputer, ditampilkan di ponsel, dll.
 
 ### General CSS Syntax 
-![css-syntax](asset/syntax-css.PNG)
+![css-syntax](../asset/syntax-css.PNG)
 
 ### External & Internal Link CSS
 
@@ -12,10 +12,10 @@ Untuk menerapkan rule style CSS bisa menggunakan melalui cara external link CSS 
 <link rel="stylesheet" href="">
 ```
 Taruh external link tersebut di dalam tag body file HTML. Berikut ini contohnya:
-![code-snip](asset/code-snip-1.png)
+![code-snip](../asset/code-snip-1.png)
 
 Atau bisa juga dengan cara internal link dengan menggunakan elemen tag `<style>`. Berikut ini contohnya:
-![code-snip](asset/code-snip.png)
+![code-snip](../asset/code-snip.png)
 
 ### Jenis-Jenis CSS Selector
 
