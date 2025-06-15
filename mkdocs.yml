@@ -1,0 +1,47 @@
+site_name: Notes
+
+theme: 
+  name: material
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.instant.preview
+    - navigation.tabs
+    - navigation.sections
+    - content.tabs.link
+
+nav:
+  - Home: index.md
+  - Front-end:
+      - Getting Started: frontend/Getting Started.md
+      - HTML: frontend/html.md
+      - CSS: frontend/css.md
+      
+  - Networking (CCNA):
+      - Getting Started: networking/Getting Started.md
+      - CCNA: networking/ccnaintro.md
+  - About:
+      - Notes to Reader: about/notes.md
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - admonition
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - search
+  - auto-refresh-build-pages:
+      update_message: "The page has been updated. Do you want to reload?"
+      yes_button_text: "Yes"
+      no_button_text: "No"
+      check_interval_seconds: 60
