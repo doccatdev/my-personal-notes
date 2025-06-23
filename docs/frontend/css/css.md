@@ -167,3 +167,357 @@ body {
     ```
 
 ### Text (Teks)
+
+#### Properties `font-family`
+
+Properties ini memungkinkan mengatur tampilan jenis huruf (_font_) dalam sebuah halaman website.
+
+!!! info "HTML and CSS Code"
+=== "HTML"
+
+    ``` html
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Text</title>
+    </head>
+
+    <body>
+        <link rel="stylesheet" href="text.css">
+        <h1>Briads</h1>
+        <p class="credit">by Ivy Duckets</p>
+        <p class="intro">The <a class="breed" href="http://en.wikipedia.org/wiki/
+        Briard">briard</a>, or berger de brei, is a large breed of dog traditionally used as
+            a header and guardian of sheep
+        </p>
+    </body>
+
+    </html>
+    ```
+
+=== "CSS"
+
+    ``` css
+    /* Specify font family / style / typeface */
+
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    h1,
+    h2 {
+        font-family: Arial, Verdana, Geneva, sans-serif;
+    }
+
+    .credit {
+
+        font-family: 'Courier New', Courier, monospace;
+    }
+    ```
+
+#### Properties `font-size`
+
+Properti ini digunakan untuk mengatur ukuran tulisan (_font_) dalam sebuah halaman website. 
+Berikut ini beberapa cara untuk mengatur ukuran tulisan:
+
+  - Pixels
+  - Percentages 
+  - Ems 
+
+!!! example "Pixels"
+```
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+}
+```
+
+!!! example "Percentage"
+```
+h1,
+h2 {
+    font-family: Arial, Verdana, Geneva, sans-serif;
+    font-size: 200%;
+}
+```
+
+!!! example "Ems"
+```
+.credit {
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+}
+```
+
+!!! info "HTML and CSS Code"
+=== "HTML"
+
+    ``` html
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Text</title>
+    </head>
+
+    <body>
+        <link rel="stylesheet" href="text.css">
+        <h1>Briads</h1>
+        <p class="credit">by Ivy Duckets</p>
+        <p class="intro">The <a class="breed" href="http://en.wikipedia.org/wiki/
+        Briard">briard</a>, or berger de brei, is a large breed of dog traditionally used as
+            a header and guardian of sheep
+        </p>
+    </body>
+
+    </html>
+    ```
+
+=== "CSS"
+
+    ``` css
+    /* Specify font family / style / typeface and font size*/
+
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 12px;
+    }
+
+    h1,
+    h2 {
+        font-family: Arial, Verdana, Geneva, sans-serif;
+        font-size: 200%;
+    }
+
+    .credit {
+
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.5em;
+    }
+    ```
+
+#### Properties `font-weight`
+
+Properties ini digunakan untuk membuat tulisan bold (_text bold_). Properties ini memiliki dua nilai (_value_), yaitu normal dan bold. Untuk value normal maka tampilan teks akan terlihat normal, sedangkan untuk value bold maka tampilan teks akan terlihat tebal.
+
+!!! example "properties font-weight"
+
+```
+.credit {
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+```
+
+!!! info "HTML and CSS Code"
+=== "HTML"
+
+    ``` html
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Text</title>
+    </head>
+
+    <body>
+        <link rel="stylesheet" href="text.css">
+        <h1>Briads</h1>
+        <p class="credit">by Ivy Duckets</p>
+        <p class="intro">The <a class="breed" href="http://en.wikipedia.org/wiki/
+        Briard">briard</a>, or berger de brei, is a large breed of dog traditionally used as
+            a header and guardian of sheep
+        </p>
+    </body>
+
+    </html>
+    ```
+
+=== "CSS"
+
+    ``` css
+    /* Specify font family / style / typeface and font size*/
+
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 12px;
+    }
+
+    h1,
+    h2 {
+        font-family: Arial, Verdana, Geneva, sans-serif;
+        font-size: 200%;
+    }
+
+    .credit {
+
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+    ```
+
+#### Properties `font-style`
+
+Properties ini digunakan untuk membuat huruf / tulisan terlihat _italic_. Terdapat tiga value dalam properties ini, yaitu:
+
+ - normal 
+ - italic
+ - oblique
+
+!!! example "properties font-style"
+```
+.credit {
+
+    font-style: italic;
+}
+```
+!!! info "HTML and CSS Code"
+=== "HTML"
+
+    ``` html
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Text</title>
+    </head>
+
+    <body>
+        <link rel="stylesheet" href="text.css">
+        <h1>Briads</h1>
+        <p class="credit">by Ivy Duckets</p>
+        <p class="intro">The <a class="breed" href="http://en.wikipedia.org/wiki/
+        Briard">briard</a>, or berger de brei, is a large breed of dog traditionally used as
+            a header and guardian of sheep
+        </p>
+    </body>
+
+    </html>
+    ```
+
+=== "CSS"
+
+    ``` css
+    /* Specify font family / style / typeface and font size*/
+
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 12px;
+    }
+
+    h1,
+    h2 {
+        font-family: Arial, Verdana, Geneva, sans-serif;
+        font-size: 200%;
+    }
+
+    .credit {
+
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.5em;
+        font-weight: bold;
+        font-style: italic;
+    }
+    ```
+
+#### Properties `text-transform`
+
+Properties ini digunakan untuk mengubah huruf besar/kecil pada sebuah teks / tulisan.
+
+!!! example "text-transform: uppercase"
+```
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+```
+
+!!! example "text-transform: lowercase"
+```
+h1,
+h2 {
+    font-family: Arial, Verdana, Geneva, sans-serif;
+    font-size: 200%;
+    text-transform: lowercase;
+}
+
+```
+
+!!! example "text-transform: capitalize"
+```
+.credit {
+
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+    text-transform: capitalize;
+}
+```
+
+!!! info "HTML and CSS Code"
+=== "HTML"
+
+    ``` html
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Text</title>
+    </head>
+
+    <body>
+        <link rel="stylesheet" href="text.css">
+        <h1>Briads</h1>
+        <p class="credit">by Ivy Duckets</p>
+        <p class="intro">The <a class="breed" href="http://en.wikipedia.org/wiki/
+        Briard">briard</a>, or berger de brei, is a large breed of dog traditionally used as
+            a header and guardian of sheep
+        </p>
+        <h2>Breed History</h2>
+        <p class="description">
+            The briad, which is believed to have originated in France, has been bred for centuries to herd and protect the
+            sheep.
+        </p>
+    </body>
+
+    </html>
+    ```
+
+=== "CSS"
+
+    ``` css
+    body {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    h1,
+    h2 {
+        font-family: Arial, Verdana, Geneva, sans-serif;
+        font-size: 200%;
+        text-transform: lowercase;
+    }
+
+    .credit {
+
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 1.5em;
+        text-transform: capitalize;
+    }
+    ```
