@@ -8,8 +8,7 @@ theme:
     - navigation.instant.preview
     - navigation.tabs
     - navigation.sections
-    - content.tabs.link
-
+    
 nav:
   - Home: index.md
   - Front-end:

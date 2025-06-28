@@ -521,3 +521,402 @@ h2 {
         text-transform: capitalize;
     }
     ```
+
+#### Properties `text-decoration`
+
+Properties ini digunakan untuk menambahkan dekorasi pada teks. Properties ini memiliki empat _value_ (_overline_, _underline_, _line through_ dan _blink_).
+
+!!! info "HTML and CSS Code"
+=== "HTML"
+
+    ``` html
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Text Properties</title>
+        <link rel="stylesheet" href="text.css">
+    </head>
+    <body>
+        <h1>This is Heading 1</h1>
+        <h2>This is Heading 2</h2>
+        <h3>This is Heading 3</h3>
+        <h4>This is Heading 4</h4>
+    </body>
+    </html>
+    ```
+
+=== "CSS"
+
+    ``` css
+    h1 {
+    text-decoration: overline;
+    }
+
+    h2 {
+    text-decoration: line-through;
+    }
+
+    h3 {
+    text-decoration: underline;
+    }
+
+    h4 {
+    text-decoration: blink;
+    }
+    ```
+
+#### Properties `line-height`
+
+Properties ini digunakan untuk mengatur jarak antar teks.
+
+!!! info "HTML and CSS Code"
+=== "HTML"
+
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Text Properties</title>
+        <link rel="stylesheet" href="text.css">
+    </head>
+
+    <body>
+        <h1>The Breed History</h1>
+        <p>
+            The briard, which is believed to have originated in France, has been bred for centuries to herd<br>
+            and to protect sheep. The breed was used by French Army as sentries, messengers and to<br> 
+            search for wounded soldiers because of its fine sense of hearing.
+        </p>
+    </body>
+
+    </html>
+    ```
+
+=== "CSS"
+
+    ```css
+    p {
+        line-height: 1.6;
+    }
+    ```
+
+#### Properties `letter-spacing`
+
+Properties ini digunakan untuk mengatur jarak (_space_) antar huruf dalam teks atau tulisan. 
+
+!!! info "HTML dan CSS Code"
+=== "HTML"
+
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Text Properties</title>
+        <link rel="stylesheet" href="text.css">
+    </head>
+
+    <body>  
+        <h1>Briads</h1>
+        <p class="credit">by Ivy Duckets</p>
+        <h2>The Breed History</h2>
+        <p>
+            The briard, which is believed to have originated in France, has been bred for centuries to herd<br>
+            and to protect sheep. The breed was used by French Army as sentries, messengers and to<br> 
+            search for wounded soldiers because of its fine sense of hearing.
+        </p>
+    </body>
+
+    </html>
+    ```
+
+=== "CSS"
+
+    ```css
+    h1,h2 { 
+        letter-spacing: 0.3em;
+    }
+
+    p {
+        line-height: 1.6;
+    }
+    ```
+
+#### Properties `word-spacing`
+
+Properties ini digunakan untuk mengatur jarak (_space_) antar huruf dalam teks atau tulisan.
+
+!!! info "HTML dan CSS Code"
+=== "HTML"
+
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Text Properties</title>
+        <link rel="stylesheet" href="text.css">
+    </head>
+
+    <body>  
+        <h1>Briads</h1>
+        <p class="credit">by Ivy Duckets</p>
+        <h2>The Breed History</h2>
+        <p>
+            The briard, which is believed to have originated in France, has been bred for centuries to herd<br>
+            and to protect sheep. The breed was used by French Army as sentries, messengers and to<br> 
+            search for wounded soldiers because of its fine sense of hearing.
+        </p>
+    </body>
+
+    </html>
+    ```
+
+=== "CSS"
+
+    ```css
+    h1,h2 { 
+        letter-spacing: 0.3em;
+    }
+
+    p {
+        line-height: 1.6;
+        word-spacing: 1em;
+    }
+    ```
+
+#### Properties `text-align`
+
+Properties ini digunakan untuk mengatur _alignment_ sebuah teks. Terdapat empat _value_ dalam pengaturan _alignment_.
+- left
+- right
+- center
+- justify
+
+!!! info "HTML dan CSS Code"
+
+=== "HTML"
+
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Text Properties</title>
+        <link rel="stylesheet" href="text.css">
+    </head>
+
+    <body>
+        <h1>Briads</h1>
+        <p class="credit">by Ivy Duckets</p>
+        <p>
+            The briad or berger de brie, is a large 
+        </p>
+        <h2>The Breed History</h2>
+        <p>
+            The briard, which is believed to have originated in France, has been bred for centuries to herd<br>
+            and to protect sheep. The breed was used by French Army as sentries, messengers and to<br> 
+            search for wounded soldiers because of its fine sense of hearing.
+        </p>
+    </body>
+
+    </html>
+    ```
+
+=== "CSS"
+
+    ```css
+    h1,h2 {
+        text-align: center;
+    }
+
+    .credit {
+        text-align:right
+    }
+    p {
+        line-height: 1.6;
+        text-align: justify;
+    }
+    ```
+
+#### Properties `vertical-align`
+#### Properties `text-indent`
+
+Properties ini digunakan untuk membuat indent di baris pertama sebuah teks.
+
+!!! info "HTML dan CSS Code"
+
+=== "HTML"
+
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Text Properties</title>
+        <link rel="stylesheet" href="text.css">
+    </head>
+
+    <body>
+        <h1>Briads</h1>
+        <p class="credit">by Ivy Duckets</p>
+        <p>
+            The briad or berger de brie, is a large 
+        </p>
+        <h2>The Breed History</h2>
+        <p>
+            The briard, which is believed to have originated in France, has been bred for centuries to herd<br>
+            and to protect sheep. The breed was used by French Army as sentries, messengers and to<br> 
+            search for wounded soldiers because of its fine sense of hearing.
+        </p>
+    </body>
+
+    </html>
+    ```
+
+=== "CSS"
+
+    ```css
+    h1,h2 {
+        text-align: center;
+    }
+
+    .credit {
+        text-indent:20px;
+    }
+    p {
+        line-height: 1.6;
+        text-align: justify;
+    }
+    ```
+
+#### Properties `text-shadow`
+
+#### Properties `first-letter`
+
+Properties ini digunakan untuk membuat **drop capital** dimana huruf pertama dari awal tulisan ukuranya lebih besar daripada yang lain
+
+!!! info "HTML dan CSS Code"
+
+=== "HTML"
+
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Text Properties</title>
+        <link rel="stylesheet" href="text.css">
+    </head>
+
+    <body>
+        <h1>Briads</h1>
+        <p class="credit">by Ivy Duckets</p>
+        <p>
+            The briad or berger de brie, is a large 
+        </p>
+        <h2>The Breed History</h2>
+        <p class="intro">
+            The briard, which is believed to have originated in France, has been bred for centuries to herd<br>
+            and to protect sheep. The breed was used by French Army as sentries, messengers and to<br> 
+            search for wounded soldiers because of its fine sense of hearing.
+        </p>
+    </body>
+
+    </html>
+    ```
+
+=== "CSS"
+
+    ```css
+    h1,h2 {
+        text-align: center;
+    }
+
+    .credit {
+        text-indent:20px;
+    }
+    p {
+        line-height: 1.6;
+        text-align: justify;
+    }
+
+    p.intro:first-letter {
+        font-size: 200%;
+    }
+    ```
+
+#### Properties `first-line`
+
+Properties ini digunakan untuk membuat efek tulisan (_typography effect_), misalnya untuk membuat tulisan bercetak tebal di baris pertama dalam sebuah teks.
+
+!!! info "HTML dan CSS Code"
+
+=== "HTML"
+
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Text Properties</title>
+        <link rel="stylesheet" href="text.css">
+    </head>
+
+    <body>
+        <h1>Briads</h1>
+        <p class="credit">by Ivy Duckets</p>
+        <p>
+            The briad or berger de brie, is a large 
+        </p>
+        <h2>The Breed History</h2>
+        <p class="intro">
+            The briard, which is believed to have originated in France, has been bred for centuries to herd<br>
+            and to protect sheep. The breed was used by French Army as sentries, messengers and to<br> 
+            search for wounded soldiers because of its fine sense of hearing.
+        </p>
+    </body>
+
+    </html>
+    ```
+
+=== "CSS"
+
+    ```css
+    h1,h2 {
+        text-align: center;
+    }
+
+    .credit {
+        text-indent:20px;
+    }
+    p {
+        line-height: 1.6;
+        text-align: justify;
+    }
+
+    p.intro:first-letter {
+        font-size: 200%;
+    }
+
+    p.intro::first-line {
+        font-weight: bold;
+    }
+    ```
