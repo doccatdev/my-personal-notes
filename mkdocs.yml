@@ -21,6 +21,8 @@ nav:
       - Getting Started: networking/Getting Started.md
       - CCNA: networking/notes/ccnaintro.md
       - Labs: networking/labs/labs.md
+  - Bug Bounty:
+      - Getting Started: bounty/Getting Started.md
   - About:
       - Notes to Reader: about/notes.md
 

@@ -569,7 +569,7 @@ Properties ini digunakan untuk menambahkan dekorasi pada teks. Properties ini me
 
 #### Properties `line-height`
 
-Properties ini digunakan untuk mengatur jarak antar teks.
+Properties ini digunakan untuk mengatur jarak vertikal antar baris teks.
 
 !!! info "HTML and CSS Code"
 === "HTML"
@@ -920,3 +920,477 @@ Properties ini digunakan untuk membuat efek tulisan (_typography effect_), misal
         font-weight: bold;
     }
     ```
+
+#### Properties `:link` dan `:visited`
+
+- `:link` digunakan untuk mengatur gaya (style) dari link yang belum dikunjungi atau belum diklik oleh pengguna.
+
+- `:visited` digunakan untuk mengatur gaya dari link yang sudah dikunjungi atau sudah pernah diklik oleh pengguna.
+
+!!! info "HTML dan CSS Code"
+
+=== "HTML"
+
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Link Styling Test</title>
+    <link rel="stylesheet" href="text.css">
+    </head>
+    <body>
+
+    <h1>Contoh Styling Link</h1>
+
+    <p>
+        <a href="https://www.google.com">Link Baru (belum dikunjungi)</a>
+    </p>
+
+    <p>
+        <a href="https://www.wikipedia.org">Wikipedia (mungkin sudah dikunjungi)</a>
+    </p>
+
+    </body>
+    </html>
+
+    ```
+
+=== "CSS"
+
+    ```css
+    a:link {
+    color: deeppink;
+    text-decoration: none;
+    }
+
+    a:visited {
+        color: black;
+    }
+    ```
+
+#### Properties `:hover`, `:active` dan `:focus`
+
+- `:hover`: Style link akan berubah ketika user mengarahkan pointer (mouse) ke arah link.
+- `:active` : Style link akan berubah ketika user meng-klik link dan mouse belum dilepas.
+- `:focus`: Style link berubah ketika user menekan tombol Tab yang berada pada keyboard atau ketika di dalam inputbox terdapat cursor didalamnya.
+
+=== "HTML"
+
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Link Styling Test</title>
+        <link rel="stylesheet" href="text.css">
+    </head>
+
+    <body>
+
+        <h2>Demo Link States</h2>
+
+        <p>
+            <a href="https://www.google.com" target="_blank">Google</a><br>
+            <a href="https://www.wikipedia.org" target="_blank">Wikipedia</a><br>
+            <a href="https://www.openai.com" target="_blank">OpenAI</a>
+        </p>
+    </body>
+
+    </html>
+    ```
+
+=== "CSS"
+
+    ```css  
+    a:hover {
+    color:red;
+    }   
+
+        a:active {
+        color:orange;
+    }
+
+    a:focus {
+        outline: 2px dashed #00aaff;
+        background-color: #e0f7ff;
+    }
+    ```
+
+### CSS Boxes 
+
+CSS Boxes Model terdiri dari empat area
+
+1. Konten: Area dimana konten ditampilkan.
+2. Padding: Area jarak antara konten dengan border.
+3. Border: Area tepi elemen. Area ini berisi garis dan menjadi pembatas antar elemen satu dengan elemen lainnya.
+4. Margin: Area jarak antara elemen / border / boxes.
+
+
+#### Properties `border-width`
+
+Properties ini digunakan untuk mengatur tebal garis sebuah border.
+
+!!! HTML dan CSS Code
+
+=== "HTML"
+
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Box - Border Properties</title>
+    </head>
+
+    <body>
+        <h1>Border Properties in CSS</h1>
+        <link rel="stylesheet" href="boxes.css">
+        <div class="border-width-properties">
+            Properties <code>border-width</code> digunakan untuk mengatur ketebalan garis border.<br>
+            Contoh: <code>border-width: 2px;</code>
+        </div>
+    </body>
+
+    </html>
+    ```
+
+=== "CSS"
+
+    ```css
+    h1 {
+        font-family: Arial;
+        font-size: 16px;
+    }
+
+    div.border-width-properties {
+        border-style: dotted;
+        border-width: 2px;
+    }
+    ```
+
+#### Properties `border-style`
+
+Properties ini digunakan untuk mengatur _style_ (gaya) border. Berikut ini _value_ pada properties `border-style`.
+
+- solid: solid single line.
+- dotted: square dots.
+- dashed: series of short lines.
+- double: two solid lines.
+- groove: carve into the page.
+- inset: stick out from the page.
+- outset: looks likes coming out of screen.
+- hidden / none: no border shown.
+
+!!! info "HTML dan CSS Code"
+
+=== "HTML"
+
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Box - Border Properties</title>
+    </head>
+
+    <body>
+        <h1>Border Properties in CSS</h1>
+        <link rel="stylesheet" href="boxes.css">
+        <div class="border-style-properties">
+            Properties <code>border-width</code> digunakan untuk mengatur ketebalan garis border.<br>
+            Contoh: <code>border-width: 2px;</code>
+        </div>
+    </body>
+
+    </html>
+    ```
+=== "CSS"
+
+    ```css
+        h1 {
+        font-family: Arial;
+        font-size: 16px;
+    }
+
+    div.border-style-properties {
+        border-style: solid;
+        border-width: 2px;  
+    }
+    ```
+
+#### Properties `border-color`
+
+Properties ini digunakan untuk mengatur _style_ (gaya) warna garis pada border. 
+
+!!! info "HTML and CSS Code"
+
+=== "HTML"
+
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Box - Border Properties</title>
+    </head>
+
+    <body>
+        <h1>Border Properties in CSS</h1>
+        <link rel="stylesheet" href="boxes.css">
+        <div class="border-color-properties">
+            Properties <code>border-width</code> digunakan untuk mengatur ketebalan garis border.<br>
+            Contoh: <code>border-width: 2px;</code>
+        </div>
+    </body>
+
+    </html>    
+    ```
+
+=== "CSS"
+
+    ```css
+    h1 {
+        font-family: Arial;
+        font-size: 16px;
+    }
+
+    div.border-color-properties {
+        border-style: solid;
+        border-width: 2px;
+        border-color: burlywood;
+    }
+    ```
+
+#### Properties `border`
+
+Properties ini memungkinkan kita untuk mengartur _border-weight_, _border-style_, _border-color_ hanya dalam satu properti saja.
+
+!!! note "Susunan _value_ dari properties `border`"
+
+```css
+selector {
+    border: border-width border-style border-color 
+}
+```
+
+!!! note "Contoh Penggunaan"
+
+```css
+div.border-properties {
+    border: 3px solid red;
+}
+```
+
+!!! info "HTML dan CSS Code"
+
+=== "HTML"
+
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Box - Border Properties</title>
+    </head>
+
+    <body>
+        <h1>Border Properties in CSS</h1>
+        <link rel="stylesheet" href="boxes.css">
+        <div class="border-properties">
+            Properties <code>border-width</code> digunakan untuk mengatur ketebalan garis border.<br>
+            Contoh: <code>border-width: 2px;</code>
+        </div>
+    </body>
+
+    </html>
+    ```
+
+=== "CSS"
+
+    ```css
+    h1 {
+        font-family: Arial;
+        font-size: 16px;
+    }
+
+    div.border-properties {
+        border: 3px solid red;
+    }
+    ```
+
+### CSS Pading
+
+#### Properties `pading`
+
+Properties ini memungkinkan kita untuk mengatur jarak antara konten dengan border. Kita juga dapat mengatur nilai yang berbeda untuk setiap sisi padding. Berikut ini _properties_ untuk setiap sisi padding.
+
+- padding-top
+- padding-right
+- padding-bottom
+- padding left
+
+!!! note "Susunan _value_ dari properties `padding`"
+
+```css
+selector {
+    padding: top right bottom left 
+}
+```
+
+!!! note "Contoh Penggunaan"
+
+```css
+div.padding-properties {
+    padding: 10px 5px 3px 1px;
+}
+```
+
+!!! info "HTML dan CSS Code"
+
+=== "HTML"
+
+    ```html 
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS Box - Border Properties</title>
+    </head>
+
+    <body>
+        <h1>Border Properties in CSS</h1>
+        <link rel="stylesheet" href="boxes.css">
+        <div class="padding-properties">
+            Properties <code>border-width</code> digunakan untuk mengatur ketebalan garis border.<br>
+            Contoh: <code>border-width: 2px;</code>
+        </div>
+    </body>
+
+    </html>
+    ```
+
+=== "CSS"
+
+    ```css
+    h1 {
+        font-family: Arial;
+        font-size: 16px;
+    }
+
+    div.padding-properties {
+        border: 3px solid red;
+        padding: 10px 3px 5px 1px;
+    }
+    ```
+
+### CSS Margin
+
+#### Properties `margin`
+
+Properties ini digunakan untuk mengatur jarak antara _boxes_. Kita juga dapat mengatur nilai yang berbeda untuk setiap sisi margin. Berikut ini properties untuk setiap sisi margin.
+
+- margin-top
+- margin-right
+- margin-bottom 
+- margin-left
+
+!!! note "Susunan _value_ dari properties `margin`"
+
+```css
+selector {
+    padding: top right bottom left 
+}
+```
+
+!!! example "Contoh Penggunaan"
+
+```css
+div.margin-properties {
+    padding: 1px 2px 3px 4px;
+}
+```
+
+!!! info "HTML dan CSS Code"
+
+=== "HTML"
+
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CSS Box - Border Properties</title>
+    </head>
+
+    <body>
+        <h1>Border Properties in CSS</h1>
+        <link rel="stylesheet" href="boxes.css" />
+        <div class="padding-properties">
+        Properties <code>border-width</code> digunakan untuk mengatur ketebalan
+        garis border.<br />
+        Contoh: <code>border-width: 2px;</code>
+        </div>
+
+        <div class="margin-properties">
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima officia
+            quae sapiente ratione ducimus reprehenderit aliquid et numquam
+            perspiciatis, suscipit autem a pariatur doloremque commodi esse quam
+            quisquam dolores libero.
+        </p>
+        </div>
+    </body>
+    </html>
+    ```
+
+=== "CSS"
+
+    ```css
+    h1 {
+        font-family: Arial;
+        font-size: 16px;
+    }
+
+    div.padding-properties {
+        font-family: Times New Roman;
+        border: 3px solid red;
+        padding: 10px 5px 10px 5px;
+    }
+
+    div.margin-properties {
+        border: 4px dotted green;
+        font-family: Tahoma;
+        text-align: right;
+        width: 60%;
+        margin: 20px auto 20px auto;
+    }
+    ```
+
+!!! note "Centering Content"
+
+Untuk membuat konten berada diposisi center, atur properties `margin-left`, `margin-right` dan `width`
+
+!!! example "Contoh penggunaan"
+
+```css
+div.margin-properties {
+        border: 4px dotted green;
+        font-family: Tahoma;
+        text-align: right;
+        width: 60%;
+        margin: 20px auto 20px auto;
+    }
+```

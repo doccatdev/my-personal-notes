@@ -8,8 +8,25 @@ Protokol ini memungkinkan seseorang mengakses informasi dari web server yang ber
 _Uniform Resource Locator_ (URL) adalah rangkaian karakter yang digunakan sebagai penunjuk dari sebuah _resource_ yang ada di internet. URL sendiri terdiri dari beberapa bagian. Berikut ini adalah bagian-bagian URL.
 
 ```
-<scheme>://<host>:<port>/<path>?=<query>#<fragment>
+<scheme>://<host>:<port>/<path>?<query string/parameter>#<fragment>
 ```
+
+#### Example Part of URL
+
+```
+https://www.example.com:443/blog/article/search?docid=720&hl=en#dayone
+
+```
+
+!!! note "Catatan untuk paramter / query string"
+
+Format dasar dalam paramter / query string adalah sebagai berikut:
+
+`?key1=value2&key2=value2`
+
+- Pasangan data ditulis dalam format `key=value`
+- Jika memiliki lebih dari satu parameter dipisahkan dengan tanda `&`
+
 
 ### HTTP Request Method
 
@@ -17,11 +34,13 @@ Tabel HTTP Request Method
 
 | Method       | Deskripsi       | 
 |---------------|---------------|
-| GET   | Mengambil informasi / _resource_   |
-| POST   | Mengupdate informasi / _resource_   |
-| PUT   | Menyimpan informasi / _resource_   |
-| DELETE   | Menghapus informasi / _resource_   |
-| HEAD   | Mengambil informasi header atau metadata dari sebuah _resource_   |
+| GET   | Mengambil data |
+| POST   | Mengirimkan atau menambah data baru  |
+| PUT   | Mengganti atau menimpa (_overwirte_) data |
+| DELETE   | Menghapus data  |
+| PATCH   | Mengganti atau mengubah sebagian data  |
+| HEAD   | Mengambil informasi header atau metadata dari sebuah data   |
+
 
 ### HTTP Header
 
@@ -64,10 +83,10 @@ Tabel HTTP Respone Status Code
 
 | Status Code       | Deskripsi       | 
 |---------------|---------------|
-| 1xx  | _Informational_   |
-| 2xx   | _Succesful_   |
-| 3xx   | _Redirection_   |
-| 4xx   | _Client Error_   |
-| 5xx   | _Server Error_   |
+| 100-199  | _Informational_   |
+| 200-299   | _Succesful_   |
+| 300-399   | _Redirection_   |
+| 400-499   | _Client Error_   |
+| 500-599   | _Server Error_   |
 
 #### Common HTTP Status Code
