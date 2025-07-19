@@ -31,7 +31,7 @@ Atau bisa juga dengan cara internal link dengan menggunakan elemen tag `<style>`
 | Adjacent Sibling Selector| Menargetkan elemen yang merupakan saudara kandung terdekat setelah elemen lain | `h1 + p {}`            | Menargetkan elemen `<p>` pertama setelah `<h1>`                               |
 | General Sibling Selector | Menargetkan elemen yang merupakan saudara kandung umum. | `h1 ~ p {}`            | Menargetkan semua elemen `<p>` yang merupakan saudara dari elemen `<h1>`      |
 
-### Color (Warna)
+### Color 
 
 #### Properties `color`
 
@@ -166,7 +166,7 @@ body {
     }
     ```
 
-### Text (Teks)
+### Text 
 
 #### Properties `font-family`
 
@@ -1018,7 +1018,205 @@ Properties ini digunakan untuk membuat efek tulisan (_typography effect_), misal
     }
     ```
 
-### CSS Boxes 
+### Boxes Dimension
+
+Properties ini digunakan untuk mengatur ukuran panjang dan lebar sebuah elemen. Properties memiliki dua bagian, yaitu `height` dan `width`. `Height` digunakan untuk mengatur tinggi boxes sedangkan `width` digunakan untuk mengatur lebar boxes.
+
+!!! info "HTML dan CSS Code"
+
+=== "HTML"
+
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Box Dimensions</title>
+        <link rel="stylesheet" href="dimension.css">
+    </head>
+    <body>
+        <div>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi aliquid
+            molestias consequatur sequi laudantium distinctio voluptatibus illum,
+            officiis, ipsam incidunt corrupti, accusantium expedita tenetur mollitia
+            voluptatum blanditiis maxime magnam minus?
+        </p>
+        </div>
+    </body>
+    </html>
+    ```
+
+=== "CSS"
+
+    ```css
+    p {
+    height: 300px;
+    width: 300px;
+    }
+    ```
+
+### Limiting Width
+
+Properties ini digunakan untuk mengatur batas lebar maksimal dan minimal kotak (box)sebuah elemen. 
+
+- `min-width`: Digunakan untuk mengatur lebar terkecil yang boleh dimiliki oleh sebuah elemen.
+
+- `max-width`: Digunakan untuk mengatur lebar terbesar yang boleh dimiliki oleh sebuah elemen.
+
+
+!!! info "HTML dan CSS Code"
+
+=== "HTML"
+
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Limiting Width</title>
+    <link rel="stylesheet" href="widthlimit.css" />
+    </head>
+
+    <body>
+    <h2>Contoh min-width dan max-width</h2>
+
+    <div class="responsive-box">
+        Ini adalah kotak yang lebarnya akan menyesuaikan ukuran layar, tetapi
+        tidak akan lebih kecil dari 200px dan tidak akan lebih lebar dari 600px.
+    </div>
+    </body>
+
+    </html>
+    ```
+
+=== "CSS"
+
+    ```css
+    div.responsive-box {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #cfe2ff;
+    border: 2px, solid, #2c3e50;
+    min-width: 200px;
+    max-width: 600px;
+    }
+    ```
+
+### Limiting Height
+
+Sama seperti properties limiting width, properties ini digunakan untuk mengatur batas tinggi maksimal dan tinggi minimal kotak (box) sebuah elemen.
+
+- `max-height`: Digunakan untuk mengatur tinggi maksimal yang boleh dimiliki sebuah elemen.
+
+- `min-width`: Digunakan untuk mengatur tinggi minimal yang boleh dimiliki sebuah elemen.
+
+
+!!! info "HTML dan CSS Code"
+
+=== "HTML"
+
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height Limiting</title>
+    <link rel="stylesheet" href="heightlimit.css">
+    </head>
+
+    <body>
+
+    <h2>Contoh min-height dan max-height</h2>
+
+    <div class="kotak-tinggi">
+        Ini adalah elemen dengan <code>min-height</code> dan <code>max-height</code>.
+        Tambahkan lebih banyak teks untuk melihat bagaimana kotak ini membesar atau terbatas tingginya.
+    </div>
+
+    </body>
+
+    </html>
+    ```
+
+=== "CSS"
+
+    ```css
+    .kotak-tinggi {
+    background-color: #fce4ec;
+    padding: 15px;
+    border: 2px solid #e91e63;
+    min-height: 100px;   /* Tinggi minimum */
+    max-height: 200px;   /* Tinggi maksimum */
+    overflow-y: auto;    /* Scroll jika melebihi max-height */
+    font-family: sans-serif;
+    }
+    ```
+
+
+### Overflowing Content
+
+Properties ini digunakan untuk mengatur tampilan jika konten melebihi batas sebuah element box. Overflow memiliki beberapa properties _value_, yaitu:
+
+- visible: Konten yang melebihi element box tetap terlihat keluar batas elemen. (Pengaturan _default_)
+
+- hidden: Konten yang melebihi element box akan disembunyikan. 
+
+- scroll: Akan menampilkan scroll bar meskipun konten tidak melebihi batas.
+
+- auto: Akan menampilkan scroll bar jika diperlukan (saat konten melebihi element box).
+
+
+!!! info "HTML dan CSS Code"
+
+=== "HTML"
+
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overflow CSS</title>
+    <link rel="stylesheet" href="overflow.css" />
+    </head>
+
+    <body>
+    <h2>Contoh properties overflow</h2>
+
+    <div class="responsive-box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus quisquam pariatur voluptate illo ut distinctio
+        dicta corporis vero quibusdam nemo quos voluptates, debitis quas aliquid at deleniti velit necessitatibus
+        reprehenderit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, debitis impedit corporis et
+        neque minus minima quae maxime natus fugit aut laboriosam dolore suscipit? Cum vero eveniet nesciunt aliquid sequi.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae commodi iure nesciunt mollitia accusamus
+        expedita nihil molestias harum accusantium hic at, laboriosam rerum consequuntur laudantium saepe quae facilis
+        maiores enim.
+    </div>
+    </body>
+
+    </html>
+    ```
+
+=== "CSS"
+
+```css
+.responsive-box {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #cfe2ff;
+  border: 2px solid #2c3e50;  /* ✅ Perbaikan: penulisan border */
+  height: 75px;
+  overflow: auto;             /* 💡 Ganti "visible" → "auto" agar bisa uji efek scrollbar */
+  padding: 10px;
+}
+```
+
+### Boxes 
 
 CSS Boxes Model terdiri dari empat area
 
@@ -1032,7 +1230,7 @@ CSS Boxes Model terdiri dari empat area
 
 Properties ini digunakan untuk mengatur tebal garis sebuah border.
 
-!!! HTML dan CSS Code
+!!! info "HTML dan CSS Code"
 
 === "HTML"
 
@@ -1228,7 +1426,7 @@ div.border-properties {
     }
     ```
 
-### CSS Pading
+### Pading
 
 #### Properties `pading`
 
@@ -1295,7 +1493,7 @@ div.padding-properties {
     }
     ```
 
-### CSS Margin
+### Margin
 
 #### Properties `margin`
 
@@ -1394,3 +1592,218 @@ div.margin-properties {
         margin: 20px auto 20px auto;
     }
 ```
+
+### Display 
+
+Properties ini mengatur bagaimana sebuah elemen ditampilkan. Dengan _properties_ `display` kita mengubah perilaku _inline element_ menjadi seperti _block element_ dan sebaliknya. 
+
+#### Value `inline`
+
+_Value_ ini dapat merubah _block-level element_ menjadi berperilaku seperti _inline element_.
+
+!!! info "HTML dan CSS Code"
+
+=== "HTML"
+
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Display Properties</title>
+        <link rel="stylesheet" href="display.css" />
+    </head>
+    <body>
+        <div>Div</div>
+        <span>Span</span>
+    </body>
+    </html>
+    ``` 
+
+=== "CSS"
+
+    ```css
+    div {
+    background-color: red;
+    width: 100px;
+    height: 100px;
+    display: inline;
+    }    
+    ```
+
+#### Value `block`
+
+_Value_ ini dapat merubah _inline element_ menjadi berperilaku seperti _block-level element_.
+
+
+!!! info "HTML dan CSS Code"
+
+=== "HTML"
+
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Display Properties</title>
+        <link rel="stylesheet" href="display.css" />
+    </head>
+    <body>
+        <div>Div</div>
+        <span>Span</span>
+    </body>
+    </html>
+    ```
+
+=== "CSS"
+
+    ```css
+    span {
+    background-color: blue;
+    width: 100px;
+    height: 100px;
+    display: block;
+    }
+    ```
+
+#### Value `inline-block`
+
+_Value_ ini memungkinkan elemen diletakan secara _inline_, tetapi dapat diatur _width_ dan _height_ nya seperti _block-level element_.
+
+!!! info "HTML dan CSS Code"
+
+=== "HTML"
+
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Display Properties</title>
+        <link rel="stylesheet" href="display.css" />
+    </head>
+    <body>
+        <div>Div</div>
+        <span>Span</span>
+    </body>
+    </html>
+    ```
+
+=== "CSS"
+
+    ```css
+    span {
+    display: inline-block;
+    width: 200px;
+    height: 300px;
+    background: lightblue;
+    margin: 5px;
+    }
+    ```
+
+#### Value `none`
+
+Menyembunyikan elemen dari halaman. Elemen ini tidak akan terlihat dan tidak memakan ruang dalam halaman, tetapi konten elemen ini dapat dilihat dengan menggunakan fitur _view-source_ pada browser.
+
+!!! info "HTML dan CSS Code"
+
+=== "HTML"
+
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Display Properties</title>
+        <link rel="stylesheet" href="display.css" />
+    </head>
+    <body>
+        <div>Div</div>
+        <span>Span</span>
+    </body>
+    </html>
+    ```
+
+=== "CSS" 
+
+    ```css
+    span {
+    display: none;
+    width: 200px;
+    height: 300px;
+    background: lightblue;
+    margin: 5px;
+    }
+    ```
+
+### Properties `visibility`
+
+### Properties `border-images`
+
+### Properties `box-shadow`
+
+### Properties `border-radius`
+
+Properties ini digunakan untuk membuat _rounded corners_ untuk box elemen. Kita bisa mengatur _rounded courners_ masing-masing sisi dengan menggunakan properties berikut:
+
+- `border-top-right-radius`
+- `border-bottom-right-radius`
+- `border-bottom-left-radius`
+- `border-bottom-top-left-radius`
+
+Atau juga kita bisa mengatur empat properties tersebut dengan satu properties ini.
+
+- `border-radius`
+
+!!! note "Catatan untul _properties_ `border-radius`"
+
+Urutan _value_ dari properties _border-radius_ searah jarum jam. (top, right, bottom, left).
+
+!!! info "HTML dan CSS Code"
+
+=== "HTML"
+
+    ```html
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Radius</title>
+    <link rel="stylesheet" href="borderadius.css">
+    </head>
+
+    <body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, nulla beatae eos facere quidem adipisci dolores.
+        Incidunt quos nobis, autem illo ipsam sequi, nesciunt eius dignissimos, veritatis nostrum inventore dolore. Lorem
+        ipsum dolor sit amet consectetur adipisicing elit. Voluptates officiis facilis similique animi, iusto minus? Nihil,
+        consequuntur quaerat officiis reiciendis magni cumque perferendis expedita, totam atque veritatis quasi, voluptas
+        mollitia. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto deserunt nam enim adipisci obcaecati quae.
+        A quisquam magnam veritatis, itaque voluptatibus at cumque ad ipsa, nam et cum recusandae optio.
+    </p>
+    </body>
+
+    </html>
+    ```
+
+=== "CSS"
+
+    ```css
+    p {
+    border: 5px solid #cccccccc;
+    padding: 20px;
+    width: 275px;
+    text-align: justify;
+    border-radius: 10px 1px;
+    }
+    ```
+
+### List, Table, and Form
+
+####

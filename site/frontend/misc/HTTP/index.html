@@ -210,7 +210,27 @@
           
   
   
-  Networking (CCNA)
+  Networking
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../kali/kali/" class="md-tabs__link">
+          
+  
+  
+  Kali Linux
 
         </a>
       </li>
@@ -463,7 +483,7 @@
   
   
   <span class="md-ellipsis">
-    Networking (CCNA)
+    Networking
     
   </span>
   
@@ -474,7 +494,7 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_3">
             <span class="md-nav__icon md-icon"></span>
-            Networking (CCNA)
+            Networking
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -513,7 +533,7 @@
   
   
   <span class="md-ellipsis">
-    CCNA
+    Catatan
     
   </span>
   
@@ -582,7 +602,7 @@
   
   
   <span class="md-ellipsis">
-    About
+    Kali Linux
     
   </span>
   
@@ -592,6 +612,79 @@
         
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Kali Linux
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../kali/kali/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Kali Linux Command
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    About
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
             About
           </label>
@@ -666,6 +759,21 @@
       URL Scheme
     </span>
   </a>
+  
+    <nav class="md-nav" aria-label="URL Scheme">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-part-of-url" class="md-nav__link">
+    <span class="md-ellipsis">
+      Example Part of URL
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -758,8 +866,20 @@
 Protokol ini memungkinkan seseorang mengakses informasi dari web server yang berada di negara lain, dan menampilkan informasi tersebut ke perangkat komputer milik pribadi.</p>
 <h3 id="url-scheme">URL Scheme</h3>
 <p><em>Uniform Resource Locator</em> (URL) adalah rangkaian karakter yang digunakan sebagai penunjuk dari sebuah <em>resource</em> yang ada di internet. URL sendiri terdiri dari beberapa bagian. Berikut ini adalah bagian-bagian URL.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>&lt;scheme&gt;://&lt;host&gt;:&lt;port&gt;/&lt;path&gt;?=&lt;query&gt;#&lt;fragment&gt;
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>&lt;scheme&gt;://&lt;host&gt;:&lt;port&gt;/&lt;path&gt;?&lt;query string/parameter&gt;#&lt;fragment&gt;
 </span></code></pre></div>
+<h4 id="example-part-of-url">Example Part of URL</h4>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>https://www.example.com:443/blog/article/search?docid=720&amp;hl=en#dayone
+</span></code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Catatan untuk paramter / query string</p>
+</div>
+<p>Format dasar dalam paramter / query string adalah sebagai berikut:</p>
+<p><code>?key1=value2&amp;key2=value2</code></p>
+<ul>
+<li>Pasangan data ditulis dalam format <code>key=value</code></li>
+<li>Jika memiliki lebih dari satu parameter dipisahkan dengan tanda <code>&amp;</code></li>
+</ul>
 <h3 id="http-request-method">HTTP Request Method</h3>
 <p>Tabel HTTP Request Method</p>
 <table>
@@ -772,23 +892,27 @@ Protokol ini memungkinkan seseorang mengakses informasi dari web server yang ber
 <tbody>
 <tr>
 <td>GET</td>
-<td>Mengambil informasi / <em>resource</em></td>
+<td>Mengambil data</td>
 </tr>
 <tr>
 <td>POST</td>
-<td>Mengupdate informasi / <em>resource</em></td>
+<td>Mengirimkan atau menambah data baru</td>
 </tr>
 <tr>
 <td>PUT</td>
-<td>Menyimpan informasi / <em>resource</em></td>
+<td>Mengganti atau menimpa (<em>overwirte</em>) data</td>
 </tr>
 <tr>
 <td>DELETE</td>
-<td>Menghapus informasi / <em>resource</em></td>
+<td>Menghapus data</td>
+</tr>
+<tr>
+<td>PATCH</td>
+<td>Mengganti atau mengubah sebagian data</td>
 </tr>
 <tr>
 <td>HEAD</td>
-<td>Mengambil informasi header atau metadata dari sebuah <em>resource</em></td>
+<td>Mengambil informasi header atau metadata dari sebuah data</td>
 </tr>
 </tbody>
 </table>
@@ -797,11 +921,11 @@ Protokol ini memungkinkan seseorang mengakses informasi dari web server yang ber
 <p>Secara umum HTTP Request Header terdiri dari beberapa bagian berikut:</p>
 <div class="admonition info">
 <p class="admonition-title">Struktur HTTP Request Header</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>[HTTP Method] [URL] [HTTP Protocol Version]
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>[Headers]
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>[Body]
+<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>[HTTP Method] [URL] [HTTP Protocol Version]
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>[Headers]
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
+</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>[Body]
 </span></code></pre></div>
 </div>
 <p>Berikut ini adalah isi dari HTTP Request Header
@@ -811,11 +935,11 @@ Protokol ini memungkinkan seseorang mengakses informasi dari web server yang ber
 Berikut ini beberapa bagiannya:</p>
 <div class="admonition info">
 <p class="admonition-title">Struktur HTTP Respone Header</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>[HTTP Protocol Version] [Status Code] [Reason]
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>[Header]
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>[Body]
+<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>[HTTP Protocol Version] [Status Code] [Reason]
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>[Header]
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
+</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>[Body]
 </span></code></pre></div>
 </div>
 <p>Berikut ini adalah isi dari HTTP Respone Header
@@ -831,23 +955,23 @@ Berikut ini beberapa bagiannya:</p>
 </thead>
 <tbody>
 <tr>
-<td>1xx</td>
+<td>100-199</td>
 <td><em>Informational</em></td>
 </tr>
 <tr>
-<td>2xx</td>
+<td>200-299</td>
 <td><em>Succesful</em></td>
 </tr>
 <tr>
-<td>3xx</td>
+<td>300-399</td>
 <td><em>Redirection</em></td>
 </tr>
 <tr>
-<td>4xx</td>
+<td>400-499</td>
 <td><em>Client Error</em></td>
 </tr>
 <tr>
-<td>5xx</td>
+<td>500-599</td>
 <td><em>Server Error</em></td>
 </tr>
 </tbody>

@@ -27,8 +27,9 @@ Berikut ini adalah struktur dari HTML5:
 
 ## Nama Elemen dalam HTML
 
+### Text 
 
-### <h3>&lt;h1-h6&gt;</h3>
+#### <h3>&lt;h1-h6&gt;</h3>
 Elemen ini digunakan untuk membuat **judul** dan **subjudul** dalam sebuah halaman web.  
 Berikut adalah contoh penggunaannya:
 
@@ -71,7 +72,7 @@ Berikut adalah contoh penggunaannya:
     
 
 
-### <h3>&lt;p&gt;</h3>
+#### <h3>&lt;p&gt;</h3>
 Elemen ini digunakan untuk membuat paragraf dalam sebuah halaman web
 Berikut adalah contoh penggunaanya:
 ```html title="paragraph.html"
@@ -108,242 +109,307 @@ Berikut adalah contoh penggunaanya:
 </body>
 </html>
 
-### <h3>&lt;ul&gt;</h3>
-Elemen ini digunakan untuk membuat list yang tidak memiliki urutan numerik (bullet point) dan menandakan bahwa urutan tidak berarti (meaningless). Berikut adalah contoh penggunaanya:
-```html title="ul.html"
+#### <h3>&lt;b&gt; (bold)</h3>
+Elemen ini digunakan untuk membuat karakter dalam teks atau tulisan tampak tebal.
+
+```html title="elemenbold.html"
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Element ul</title>
+    <title>Elemen bold</title>
 </head>
+
 <body>
-    <ul>
-        <li>Kucing</li>
-        <li>Ayam</li>
-        <li>Kelinci</li>
-    </ul>
+
+    <p>
+        Hello <b>World</b>
+    </p>
+
 </body>
+
 </html>
 ```
-
-!!! example "Output elemen <`ul`>"
+!!! Example "Output elemen <`b`> (bold)"
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Element ul</title>
+    <title>Elemen bold</title>
 </head>
+
 <body>
-    <ul>
-        <li>Kucing</li>
-        <li>Ayam</li>
-        <li>Kelinci</li>
-    </ul>
+
+    <p>
+        Hello <b>World</b>
+    </p>
+
 </body>
+
 </html>
 
-### <h3>&lt;ol&gt;</h3>
-Elemen ini adalah kebalikan dari elemen ul, elemen ini biasanya digunakan untuk membuat list yang memiliki angka dan menandakan urutan tersebut berarti (meaningful)
-```html title="ol.html"
+#### <h3>&lt;i&gt; (italic)</h3>
+Elemen ini digunakan untuk membuat karakter dalam teks atau tulisan tampak miring. Elemen ini biasanya digunakan untuk istilah teknis atau istilah asing.
+
+```html title="elemenitalic.html"
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Element ol</title>
+    <title>Elemen italic</title>
 </head>
+
 <body>
-    <ol>
-      <h4>Tutorial menggoreng telur</h4>
-      <li>Pertama siapkan minyak</li>
-      <li>Siapkan wajan</li>
-      <li>Masukan minyak ke dalam wajan dan tunggu hingga panas</li>
-      <li>Pecahkan telur</li>
-      <li>Tuangkan telur ke dalam wajan dan tunggu beberapa menit</li>
-      <li>Ambil nasi dan sajikan</li>
-    </ol>
+
+    <p>
+        <p>The <i>RMS Titanic</i>, a luxury steamship, sank on April 15, 1912 after striking an iceberg.</p>
+    </p>
+
 </body>
+
 </html>
 ```
-
-!!! example "Output elemen ol"
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Element ol</title>
-</head>
-<body>
-    <ol>
-      <h4>Tutorial menggoreng telur</h4>
-      <li>Pertama siapkan minyak</li>
-      <li>Siapkan wajan</li>
-      <li>Masukan minyak ke dalam wajan dan tunggu hingga panas</li>
-      <li>Pecahkan telur</li>
-      <li>Tuangkan telur ke dalam wajan dan tunggu beberapa menit</li>
-      <li>Ambil nasi dan sajikan</li>
-    </ol>
-</body>
-</html>
-
-### <h3>&lt;li&gt;</h3>
-Elemen ini digunakan untuk membuat list item dalam sebuah webpage.
-```html title="li.html"
+!!! Example "Output elemen <`i`> (italic)"
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Element li</title>
+    <title>Elemen italic</title>
 </head>
 
 <body>
-    <ul>
-        <li>Kucing</li>
-        <li>Ayam</li>
-        <li>Kelinci</li>
-    </ul>
+
+    <p>
+        <p>The <i>RMS Titanic</i>, a luxury steamship, sank on April 15, 1912 after striking an iceberg.</p>
+    </p>
+
 </body>
 
 </html>
 
-```
+#### <h3>&lt;sup&gt; (supscript)</h3>
+Elemen ini digunakan untuk memunculkan teks kecil di atas garis normal teks. Umumnya digunakan untuk Notasi matematika (contoh: pangkat) atau catatan kaki (footnote).
 
-!!! example "Output elemen <`li`>"
+```html title="elemensup.html"
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Element li</title>
+    <title>Elemen supscript</title>
 </head>
 
 <body>
-    <ul>
-        <li>Kucing</li>
-        <li>Ayam</li>
-        <li>Kelinci</li>
-    </ul>
-</body>
-
-</html>
-
-### <h3>&lt;dl&gt;</h3>
-Elemen ini digunakan untuk membuat description list. Elemen ini biasanya terdiri dari sekumpulan term dan deskripsinya. Di dalam elemen ini, umumnya terdapat elemen lain seperti dt dan dd.
-```html title="dl.html"
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Element dl</title>
-</head>
-
-<body>
-    <dl>
-        <dt>Sushi</dt>
-        <dd>
-            adalah makanan Jepang yang terdiri dari nasi yang dibentuk bersama lauk (neta) berupa makanan laut, daging, sayuran bakar atau sudah dimasak.
-        </dd>
-        <dt>Onigiri</dt>
-        <dd>
-            adalah nama Jepang untuk makanan berupa nasi yang dipadatkan sewaktu masih hangat sehingga berbentuk segitiga, bulat, atau seperti karung beras
-        </dd>
-    </dl>
+    <p>
+        This is supscript
+    </p>
+    E = MC<sup>2</sup>
 </body>
 
 </html>
 ```
 
-### <h3>&lt;dt&gt;</h3>
-Elemen ini digunakan untuk memuat istilah yang sedang didefinisikan (definition term / istilah definisi)
-```html title="dt.html"
+!!! Example "Output elemen `<sup>`"
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Element dt</title>
+    <title>Elemen supscript</title>
 </head>
 
 <body>
-    <dl>
-        <dt>Sushi</dt>
-        <dd>
-            adalah makanan Jepang yang terdiri dari nasi yang dibentuk bersama lauk (neta) berupa makanan laut, daging, sayuran bakar atau sudah dimasak.
-        </dd>
-        <dt>Onigiri</dt>
-        <dd>
-            adalah nama Jepang untuk makanan berupa nasi yang dipadatkan sewaktu masih hangat sehingga berbentuk segitiga, bulat, atau seperti karung beras
-        </dd>
-    </dl>
+    <p>
+        This is supscript
+    </p>
+    E = MC<sup>2</sup>
 </body>
 
 </html>
-```
-### <h3>&lt;dd&gt;</h3>
-Elemen ini digunakan untuk memuat sebuah penjelasan dari term / istilah yang sedang didefinisikan
-```html title="dt.html"
+
+#### <h3>&lt;sub&gt; (subscript)</h3>
+Elemen ini digunakan untuk memunculkan teks kecil di bawah garis normal teks. Umumnya digunakan untuk rumus kimia.
+
+```html title="elemensup.html"
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Element dd</title>
+    <title>Elemen supscript</title>
 </head>
 
 <body>
-    <dl>
-        <dt>Sushi</dt>
-        <dd>
-            adalah makanan Jepang yang terdiri dari nasi yang dibentuk bersama lauk (neta) berupa makanan laut, daging, sayuran bakar atau sudah dimasak.
-        </dd>
-        <dt>Onigiri</dt>
-        <dd>
-            adalah nama Jepang untuk makanan berupa nasi yang dipadatkan sewaktu masih hangat sehingga berbentuk segitiga, bulat, atau seperti karung beras
-        </dd>
-    </dl>
+    <p>
+        This is subscript
+    </p>
+    H<sub>2</sub>O
 </body>
 
 </html>
 ```
 
-!!! example "Output elemen <`dl`>, <`dt`> dan <`dd`>"
-
+!!! Example "Output elemen `<sub>`"
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Element dd</title>
+    <title>Elemen subscript</title>
 </head>
 
 <body>
-    <dl>
-        <dt>Sushi</dt>
-        <dd>
-            adalah makanan Jepang yang terdiri dari nasi yang dibentuk bersama lauk (neta) berupa makanan laut, daging, sayuran bakar atau sudah dimasak.
-        </dd>
-        <dt>Onigiri</dt>
-        <dd>
-            adalah nama Jepang untuk makanan berupa nasi yang dipadatkan sewaktu masih hangat sehingga berbentuk segitiga, bulat, atau seperti karung beras
-        </dd>
-    </dl>
+    <p>
+        This is subscript
+    </p>
+    H<sub>2</sub>O
 </body>
 
 </html>
 
-### <h3>&lt;blockquote&gt;</h3>
+#### <h3>&lt;br&gt;</h3>
+Elemen ini digunakan untuk membuat baris baru / jeda baris di tengah paragraf.
+
+```html title="elemenbr.html"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemen br</title>
+</head>
+
+<body>
+    <p>
+        Jl. Contoh. No. 12356.<br>
+        Indonesia. Jawa Barat
+    </p>
+</body>
+
+</html>
+```
+
+!!! Example "Output elemen br"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemen br</title>
+</head>
+
+<body>
+    <p>
+        Jl. Contoh. No. 12356.<br>
+        Indonesia. Jawa Barat
+    </p>
+</body>
+
+</html>
+
+
+#### <h3>&lt;hr&gt;</h3>
+
+#### <h3>&lt;em&gt;</h3>
+Elemen ini gunakan untuk melakukan penekanan secara halus dalam suatu teks. Elemen ini biasanya ditampilkan secara italic oleh browser.
+
+```html title="em.html"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemen em</title>
+</head>
+
+<body>
+
+    <p>I <em>think</em> Ivy was the first</p>
+    <p>I think <em>Ivy</em> was the first</p>
+
+</body>
+
+</html>
+```
+!!! Example "Output elemen <`em`>"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemen em</title>
+</head>
+
+<body>
+
+    <p>I <em>think</em> Ivy was the first</p>
+    <p>I think <em>Ivy</em> was the first</p>
+
+</body>
+
+</html>
+
+#### <h3>&lt;strong&gt;</h3>
+Elemen ini digunakan untuk menunjukan penekanan yang kuat, menunjukan bahwa isinya sangat penting, serius atau mendesak.
+
+```html title="strong.html"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemen strong</title>
+</head>
+
+<body>
+
+    <p>
+        <strong>This text is important!</strong>
+    </p>
+
+</body>
+
+</html>
+```
+!!! Example "Output elemen <`strong`>"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemen strong</title>
+</head>
+
+<body>
+
+    <p>
+        <strong>This text is important!</strong>
+    </p>
+
+</body>
+
+</html>
+
+
+#### <h3>&lt;blockquote&gt;</h3>
 Elemen ini digunakan untuk kutipan panjang dan biasanya kutipan tersebut diambil dari sumber lain.
 ```html title="blockquote.html"
 <!DOCTYPE html>
@@ -391,411 +457,45 @@ Elemen ini digunakan untuk kutipan panjang dan biasanya kutipan tersebut diambil
 
 </html>
 
+#### <h3>&lt;q&gt; (qoute)</h3>
+Elemen ini digunakan untuk kutipan pendek yang berada dalam paragraf. 
 
-### <h3>&lt;figure&gt;</h3>
-Elemen ini adalah elemen yang berdiri sendiri. Elemen ini digunakan untuk membungkus konten seperti gambar, ilustrasi, diagram, cuplikan kode, dll.
-```html title="figure.html"
+```html title="elementq.html"
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Element figure</title>
+    <title>Elemen q</title>
 </head>
 
 <body>
-<figure>
-    <img src="/frontend/asset/blackgoose.png" alt="Logo produk">
-</figure>
-</body>
 
-</html>
-```
-### <h3>&lt;figcaption&gt;</h3>
-Elemen ini digunakan untuk menambahkan caption / keterangan dalam sebuah gambar, ilustrasi, diagram, cuplikan kode, dll.
-```html title="figcaption.html"
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Element figcaption</title>
-</head>
-
-<body>
-<figure>
-    <img src="/frontend/asset/blackgoose.png" alt="Logo produk">
-    <figcaption>Gambar 1. Logo Produk</figcaption>
-</figure>
-</body>
-
-</html>
-```
-!!! example "Output elemen <`figure`> dan <`figcaption`>"
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Element figure caption</title>
-</head>
-
-<body>
-<figure>
-    <img src="/frontend/asset/blackgoose.png" alt="Logo produk">
-    <figcaption>Gambar 1. Logo Produk</figcaption>
-</figure>
-</body>
-
-</html>
-
-### <h3>&lt;header&gt;</h3>
-Elemen ini digunakan untuk mendefinisikan pembuka dari halaman suatu web. Biasanya muncul di bagian atas web atau artikel.
-```html title="header.html"
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header Element</title>
-</head>
-<body>
-    <header>
-        <img src="/frontend/asset/blackgoose.png" alt="logo">
-        <h1>Web Font</h1>
-    </header>
-</body>
-</html>
-```
-
-!!! example "Output elemen <`header`>"
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Header Element</title>
-</head>
-<body>
-    <header>
-        <img src="/frontend/asset/blackgoose.png" alt="logo">
-        <h1>Web Font</h1>
-    </header>
-</body>
-</html>
-### <h3>&lt;footer&gt;</h3>
-Elemen ini digunakan untuk mendefinisikan penutup dari halaman suatu web. Biasanya muncul di bagian bawah web atau artikel dan berisi informasi seperti penulis (author), hak cipta (copyright), tautan ke dokumen terkait atau navigasi tambahan. 
-
-```html title="footer.html"
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Elemen Footer</title>
-</head>
-<body>
-
-  <header>
-    <h1>Selamat Datang di Website Saya</h1>
-  </header>
-
-  <main>
-    <p>Ini adalah konten utama dari halaman web.</p>
-  </main>
-
-  <footer>
-    <p>Hak Cipta &copy; 2025 - ABCD</p>
-    <p>Dibuat oleh <a href="https://github.com/" target="_blank">ABCD</a></p>
-  </footer>
-
-</body>
-</html>
-```
-
-!!! example "Output elemen <`footer`>"
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Elemen Footer</title>
-</head>
-<body>
-
-  <header>
-    <h1>Selamat Datang di Website Saya</h1>
-  </header>
-
-  <main>
-    <p>Ini adalah konten utama dari halaman web.</p>
-  </main>
-
-  <footer>
-    <p>Hak Cipta &copy; 2025 - ABCD</p>
-    <p>Dibuat oleh <a href="https://github.com/" target="_blank">ABCD</a></p>
-  </footer>
-
-</body>
-</html>
-
-### <h3>&lt;nav&gt;</h3>
-Elemen ini digunakan untuk mendefinisikan bagian navigasi dalam sebuah situs web. Biasanya berisi tautan (link) yang mengarahkan pengguna ke halaman lain di dalam situs tersebut atau ke bagian tertentu dari halaman yang sama.
-```html title="nav.html"
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ELemen nav</title>
-</head>
-<body>
-    <nav>
-    <ul>
-      <li><a href="#beranda">Beranda</a></li>
-      <li><a href="#tentang">Tentang</a></li>
-      <li><a href="#layanan">Layanan</a></li>
-      <li><a href="#kontak">Kontak</a></li>
-    </ul>
-  </nav>
-
-  <section id="beranda">
-    <h2>Beranda</h2>
-    <p>Selamat datang di website kami!</p>
-  </section>
-
-  <section id="tentang">
-    <h2>Tentang Kami</h2>
-    <p>Ini adalah catatan pribadi.</p>
-  </section>
-
-  <section id="layanan">
-    <h2>Layanan</h2>
-    <p>Catatan Pribadi.</p>
-  </section>
-
-  <section id="kontak">
-    <h2>Kontak</h2>
-    <p>Email: info@contoh.com</p>
-  </section>
-
-</body>
-</html>
-```
-
-!!! example "Output elemen <`nav`>"
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ELemen nav</title>
-</head>
-<body>
-    <nav>
-    <ul>
-      <li><a href="#beranda">Beranda</a></li>
-      <li><a href="#tentang">Tentang</a></li>
-      <li><a href="#layanan">Layanan</a></li>
-      <li><a href="#kontak">Kontak</a></li>
-    </ul>
-  </nav>
-
-  <section id="beranda">
-    <h2>Beranda</h2>
-    <p>Selamat datang di website kami!</p>
-  </section>
-
-  <section id="tentang">
-    <h2>Tentang Kami</h2>
-    <p>Ini adalah catatan pribadi.</p>
-  </section>
-
-  <section id="layanan">
-    <h2>Layanan</h2>
-    <p>Catatan Pribadi.</p>
-  </section>
-
-  <section id="kontak">
-    <h2>Kontak</h2>
-    <p>Email: info@contoh.com</p>
-  </section>
-
-</body>
-</html>
-### <h3>&lt;section&gt;</h3>
-Elemen ini digunakan untuk mengelompokan konten terkait secara bersama-sama, dan biasanya setiap bagian konten memiliki judulnya sendiri.
-
-```html title="section.html"
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemen section</title>
-</head>
-<body>
-  <section>
-    <h2>Beranda</h2>
-    <p>Selamat datang di website kami!</p>
-  </section>
-
-  <section>
-    <h2>Tentang Kami</h2>
-    <p>Ini adalah catatan pribadi.</p>
-  </section>
-
-  <section>
-    <h2>Layanan</h2>
-    <p>Catatan Pribadi.</p>
-  </section>
-
-  <section>
-    <h2>Kontak</h2>
-    <p>Email: info@contoh.com</p>
-  </section>
-
-</body>
-</html>
-```
-
-!!! example "Output elemen <`section`>"
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemen section</title>
-</head>
-<body>
-  <section>
-    <h2>Beranda</h2>
-    <p>Selamat datang di website kami!</p>
-  </section>
-
-  <section>
-    <h2>Tentang Kami</h2>
-    <p>Ini adalah catatan pribadi.</p>
-  </section>
-
-  <section>
-    <h2>Layanan</h2>
-    <p>Catatan Pribadi.</p>
-  </section>
-
-  <section>
-    <h2>Kontak</h2>
-    <p>Email: info@contoh.com</p>
-  </section>
-
-</body>
-</html>
-### <h3>&lt;article&gt;</h3>
-Elemen ini digunakan untuk konten mandiri yang dapat berdiri sendiri atau digunakan kembali dalam konteks yang berbeda. Biasanya elemen ini digunakan untuk artikel majalah, atau surat kabar, postingan blog, komentar atau item lain.
-
-```html title="article.html"
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemen artikel</title>
-</head>
-<body>
-    <article>
-        <h2>Ini adalah contoh penggunaan elemen artikel</h2>
-        <p>
-        Belajar pemrograman membantu meningkatkan logika dan kemampuan problem solving. Ini juga membuka peluang karir yang luas di bidang teknologi
-        </p>
-    </article>
-</body>
-</html>
-```
-!!! example "Output elemen <`article`>"
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemen artikel</title>
-</head>
-<body>
-    <article>
-        <h2>Ini adalah contoh penggunaan elemen artikel</h2>
-        <p>
-        Belajar pemrograman membantu meningkatkan logika dan kemampuan problem solving. Ini juga membuka peluang karir yang luas di bidang teknologi
-        </p>
-    </article>
-</body>
-</html>
-
-### <h3>&lt;aside&gt;</h3>
-Elemen ini digunakan untuk memberikan informasi tambahan. Contohnya, dalam sebuah elemen artikel aside biasanya akan menampung informasi yang berhubungan dengan artikel tetapi tidak essential untuk artikel secara keseluruhan. Sebagai contoh, menambahkan pullquote atau glosarium. Elemen ini juga dapat digunakan diluar elemen artikel untuk menampung informasi yang terakit dalam suatu halaman di dalam webpage.
-
-Aside dalam elemen artikel (pullquote):
-```html title="aside.html"
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemen aside sebagai pullquote</title>
-</head>
-
-<body>
-    <article>
-        <h2>Mengapa Python Cocok untuk Pemula?</h2>
-        <p>Python adalah bahasa pemrograman yang sangat populer karena sintaksnya yang sederhana dan mudah dipahami,
-            terutama bagi pemula.</p>
-
-        <aside>
-            <blockquote>
-                "Python dirancang agar bisa dibaca seperti bahasa manusia — itulah kekuatan utamanya."
-            </blockquote>
-        </aside>
-
-        <p>Selain itu, Python juga didukung oleh komunitas besar dan pustaka (library) yang lengkap, mulai dari
-            pengolahan data hingga pengembangan web dan kecerdasan buatan.</p>
-    </article>
+    <p>As A.A. Milne said, <q>Some people talk to
+            animals. Not many listen though. That's the
+            problem.</q></p>
 
 
 </body>
 
 </html>
 ```
-!!! example "Output elemen <`aside`> sebagai pullquote"
+!!! Example "Output elemen <`q`> (quote)"
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemen aside sebagai pullquote</title>
+    <title>Elemen q</title>
 </head>
 
 <body>
-    <article>
-        <h2>Mengapa Python Cocok untuk Pemula?</h2>
-        <p>Python adalah bahasa pemrograman yang sangat populer karena sintaksnya yang sederhana dan mudah dipahami,
-            terutama bagi pemula.</p>
 
-        <aside>
-            <blockquote>
-                "Python dirancang agar bisa dibaca seperti bahasa manusia — itulah kekuatan utamanya."
-            </blockquote>
-        </aside>
-
-        <p>Selain itu, Python juga didukung oleh komunitas besar dan pustaka (library) yang lengkap, mulai dari
-            pengolahan data hingga pengembangan web dan kecerdasan buatan.</p>
-    </article>
+    <p>As A.A. Milne said, <q>Some people talk to
+            animals. Not many listen though. That's the
+            problem.</q></p>
 
 
 </body>
@@ -803,78 +503,121 @@ Aside dalam elemen artikel (pullquote):
 </html>
 
 
-Aside sebagai glosarium:
-```html title="aside_glosarium.html"
+#### <h3>&lt;abbr&gt; (abbreviations)</h3>
+Elemen ini digunakan untuk menandai singkatan atau akronim dalam sebuah teks.
+
+```html title="elemenabbr.html"
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemen aside sebagai glosarium</title>
+    <title>Elemen abbr</title>
 </head>
 
 <body>
-    <article>
-        <h2>Dasar-Dasar Fungsi di Python</h2>
-        <p>Fungsi di Python digunakan untuk mengelompokkan kode agar dapat digunakan kembali dan membuat program lebih
-            rapi.</p>
-
-        <aside>
-            <h3>Glosarium</h3>
-            <ul>
-                <li><strong>Fungsi:</strong> Blok kode yang hanya dijalankan saat dipanggil.</li>
-                <li><strong>Parameter:</strong> Variabel yang diteruskan ke dalam fungsi.</li>
-                <li><strong>Return:</strong> Nilai yang dikembalikan oleh fungsi setelah dieksekusi.</li>
-            </ul>
-        </aside>
-
-        <p>Kita bisa membuat fungsi sendiri menggunakan kata kunci <code>def</code> dan memanggilnya sesuai kebutuhan.
-        </p>
-    </article>
-
-
-
+<p>
+    The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
+</p>
 </body>
 
 </html>
 ```
-!!! example "Output elemen <`aside`> sebagai glosarium"
 
+!!!Example "Output elemen `<abbr>`"
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemen aside sebagai glosarium</title>
+    <title>Elemen abbr</title>
 </head>
 
 <body>
-    <article>
-        <h2>Dasar-Dasar Fungsi di Python</h2>
-        <p>Fungsi di Python digunakan untuk mengelompokkan kode agar dapat digunakan kembali dan membuat program lebih
-            rapi.</p>
-
-        <aside>
-            <h3>Glosarium</h3>
-            <ul>
-                <li><strong>Fungsi:</strong> Blok kode yang hanya dijalankan saat dipanggil.</li>
-                <li><strong>Parameter:</strong> Variabel yang diteruskan ke dalam fungsi.</li>
-                <li><strong>Return:</strong> Nilai yang dikembalikan oleh fungsi setelah dieksekusi.</li>
-            </ul>
-        </aside>
-
-        <p>Kita bisa membuat fungsi sendiri menggunakan kata kunci <code>def</code> dan memanggilnya sesuai kebutuhan.
-        </p>
-    </article>
-
-
-
+<p>
+    The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
+</p>
 </body>
 
 </html>
-### <h3>&lt;address&gt;</h3>
+
+#### <h3>&lt;cite&gt; (citation)</h3>
+Elemen ini digunakan untuk memberikan referensi ketika mengambil sumber dari buku, tulisan orang lain atau referensi ilmiah (paper penelitian / riset).
+
+```html title="elemencite.html"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemen  cite</title>
+</head>
+<body>
+    <p>
+        <cite>The Scream</cite>by Edward Munch. Painted in 1893.
+    </p>
+</body>
+</html>
+```
+
+!!! Example "Output elemen `<cite>`"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemen  cite</title>
+</head>
+<body>
+    <p>
+        <cite>The Scream</cite>by Edward Munch. Painted in 1893.
+    </p>
+</body>
+</html>
+
+#### <h3>&lt;dfn&gt; (define terms)</h3>
+Elemen ini digunakan untuk menjelaskan beberapa terminologi baru (seperti konsep akademis atau jargon) dalam sebuah dokumen.
+
+```html title="elemendfn.html"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemen cite</title>
+</head>
+
+<body>
+    <p>
+        <dfn>HTML</dfn>is standard markup language for creating web pages
+    </p>
+</body>
+
+</html>
+```
+!!! Example "Output elemen `<dfn>`"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemen cite</title>
+</head>
+
+<body>
+    <p>
+        <dfn>HTML</dfn> is standard markup language for creating web pages
+    </p>
+</body>
+
+</html>
+
+
+#### <h3>&lt;address&gt;</h3>
 Elemen ini digunakan untuk kebutuhan yang spesifik, yaitu untuk membuat detail kontak penulis halaman dalam situs web. 
 
 ```html title="address.html"
@@ -934,177 +677,83 @@ Elemen ini digunakan untuk kebutuhan yang spesifik, yaitu untuk membuat detail k
 
 </html>
 
-### <h3>&lt;em&gt;</h3>
-Elemen ini gunakan untuk melakukan penekanan secara halus dalam suatu teks. Elemen ini biasanya ditampilkan secara italic oleh browser.
 
-```html title="em.html"
+#### <h3>&lt;ins&gt; (inserted)</h3>
+Elemen ini digunakan untuk menunjukan bahwa sebuah konten telah dimasukan ke dalam sebuah dokumen.
+```html title="elemen_ins.html"
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemen em</title>
+    <title>Elemen ins dan del</title>
 </head>
 
 <body>
-
-    <p>I <em>think</em> Ivy was the first</p>
-    <p>I think <em>Ivy</em> was the first</p>
-
+    <p>It was the <del>worst</del> <ins>best</ins> idea
+        she had ever had.</p>
 </body>
 
 </html>
 ```
-!!! Example "Output elemen <`em`>"
+!!! Example "Output elemen `<ins>`"
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemen em</title>
+    <title>Elemen ins dan del</title>
 </head>
 
 <body>
-
-    <p>I <em>think</em> Ivy was the first</p>
-    <p>I think <em>Ivy</em> was the first</p>
-
+    <p>It was the <del>worst</del> <ins>best</ins> idea
+        she had ever had.</p>
 </body>
 
 </html>
 
-### <h3>&lt;strong&gt;</h3>
-Elemen ini digunakan untuk menunjukan penekanan yang kuat, menunjukan bahwa isinya sangat penting, serius atau mendesak.
+#### <h3>&lt;del&gt; (deleted)</h3>
+Elemen ini adalah kebalikan dari elemen ins. Elemen ini digunakan untuk menunjukan bahwa sebuah konten telah dihilangkan dari dalam dokumen.
 
-```html title="strong.html"
+```html title="elemen_del.html"
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemen strong</title>
+    <title>Elemen ins dan del</title>
 </head>
 
 <body>
-
-    <p>
-        <strong>This text is important!</strong>
-    </p>
-
+    <p>It was the <del>worst</del> <ins>best</ins> idea
+        she had ever had.</p>
 </body>
 
 </html>
 ```
-!!! Example "Output elemen <`strong`>"
+
+!!! Example "Output elemen `<del>`"
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemen strong</title>
+    <title>Elemen ins dan del</title>
 </head>
 
 <body>
-
-    <p>
-        <strong>This text is important!</strong>
-    </p>
-
+    <p>It was the <del>worst</del> <ins>best</ins> idea
+        she had ever had.</p>
 </body>
 
 </html>
 
-### <h3>&lt;b&gt; (bold)</h3>
-Elemen ini digunakan untuk membuat karakter dalam teks atau tulisan tampak tebal.
 
-```html title="elemenbold.html"
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemen bold</title>
-</head>
-
-<body>
-
-    <p>
-        Hello <b>World</b>
-    </p>
-
-</body>
-
-</html>
-```
-!!! Example "Output elemen <`b`> (bold)"
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemen bold</title>
-</head>
-
-<body>
-
-    <p>
-        Hello <b>World</b>
-    </p>
-
-</body>
-
-</html>
-
-### <h3>&lt;i&gt; (italic)</h3>
-Elemen ini digunakan untuk membuat karakter dalam teks atau tulisan tampak miring. Elemen ini biasanya digunakan untuk istilah teknis atau istilah asing.
-
-```html title="elemenitalic.html"
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemen italic</title>
-</head>
-
-<body>
-
-    <p>
-        <p>The <i>RMS Titanic</i>, a luxury steamship, sank on April 15, 1912 after striking an iceberg.</p>
-    </p>
-
-</body>
-
-</html>
-```
-!!! Example "Output elemen <`i`> (italic)"
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemen italic</title>
-</head>
-
-<body>
-
-    <p>
-        <p>The <i>RMS Titanic</i>, a luxury steamship, sank on April 15, 1912 after striking an iceberg.</p>
-    </p>
-
-</body>
-
-</html>
-
-### <h3>&lt;s&gt; (strike throught text)</h3>
+#### <h3>&lt;s&gt; (strike throught text)</h3>
 Elemen ini digunakan untuk mengindikasikan bahwa suatu informasi sudah tidak akurat atau relevan lagi, tetapi informasi tidak boleh dihapus dalam webpage. Secara visual, elemen ini ditampilkan dengan garis melintang di tengah kata.
 
 ```html title="elmen_s.html"
@@ -1147,580 +796,247 @@ Elemen ini digunakan untuk mengindikasikan bahwa suatu informasi sudah tidak aku
 
 </html>
 
-### <h3>&lt;u&gt; (underline)</h3>
-Elemen ini digunakan untuk teks atau tulisan yang ditata atau diartikulasikan berbeda dari teks yang normal / pada umumnya, seperti kata yang salah pengejaan atau nama seseorang dalam bahasa Mandarin (Chinese Text).
+### List
 
-```html title="elemen_u"
+#### <h3>&lt;ul&gt;</h3>
+Elemen ini digunakan untuk membuat list yang tidak memiliki urutan numerik (bullet point) dan menandakan bahwa urutan tidak berarti (meaningless). Berikut adalah contoh penggunaanya:
+```html title="ul.html"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element ul</title>
+</head>
+<body>
+    <ul>
+        <li>Kucing</li>
+        <li>Ayam</li>
+        <li>Kelinci</li>
+    </ul>
+</body>
+</html>
+```
+
+!!! example "Output elemen <`ul`>"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element ul</title>
+</head>
+<body>
+    <ul>
+        <li>Kucing</li>
+        <li>Ayam</li>
+        <li>Kelinci</li>
+    </ul>
+</body>
+</html>
+
+#### <h3>&lt;ol&gt;</h3>
+Elemen ini adalah kebalikan dari elemen ul, elemen ini biasanya digunakan untuk membuat list yang memiliki angka dan menandakan urutan tersebut berarti (meaningful)
+```html title="ol.html"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element ol</title>
+</head>
+<body>
+    <ol>
+      <h4>Tutorial menggoreng telur</h4>
+      <li>Pertama siapkan minyak</li>
+      <li>Siapkan wajan</li>
+      <li>Masukan minyak ke dalam wajan dan tunggu hingga panas</li>
+      <li>Pecahkan telur</li>
+      <li>Tuangkan telur ke dalam wajan dan tunggu beberapa menit</li>
+      <li>Ambil nasi dan sajikan</li>
+    </ol>
+</body>
+</html>
+```
+
+!!! example "Output elemen ol"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element ol</title>
+</head>
+<body>
+    <ol>
+      <h4>Tutorial menggoreng telur</h4>
+      <li>Pertama siapkan minyak</li>
+      <li>Siapkan wajan</li>
+      <li>Masukan minyak ke dalam wajan dan tunggu hingga panas</li>
+      <li>Pecahkan telur</li>
+      <li>Tuangkan telur ke dalam wajan dan tunggu beberapa menit</li>
+      <li>Ambil nasi dan sajikan</li>
+    </ol>
+</body>
+</html>
+
+#### <h3>&lt;li&gt;</h3>
+Elemen ini digunakan untuk membuat list item dalam sebuah webpage.
+```html title="li.html"
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemen underline</title>
+    <title>Element li</title>
 </head>
 
 <body>
+    <ul>
+        <li>Kucing</li>
+        <li>Ayam</li>
+        <li>Kelinci</li>
+    </ul>
+</body>
 
-    <p>This is some <u>mispeled</u> text.</p>
+</html>
 
+```
+
+!!! example "Output elemen <`li`>"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element li</title>
+</head>
+
+<body>
+    <ul>
+        <li>Kucing</li>
+        <li>Ayam</li>
+        <li>Kelinci</li>
+    </ul>
+</body>
+
+</html>
+
+#### <h3>&lt;dl&gt;</h3>
+Elemen ini digunakan untuk membuat description list. Elemen ini biasanya terdiri dari sekumpulan term dan deskripsinya. Di dalam elemen ini, umumnya terdapat elemen lain seperti dt dan dd.
+```html title="dl.html"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element dl</title>
+</head>
+
+<body>
+    <dl>
+        <dt>Sushi</dt>
+        <dd>
+            adalah makanan Jepang yang terdiri dari nasi yang dibentuk bersama lauk (neta) berupa makanan laut, daging, sayuran bakar atau sudah dimasak.
+        </dd>
+        <dt>Onigiri</dt>
+        <dd>
+            adalah nama Jepang untuk makanan berupa nasi yang dipadatkan sewaktu masih hangat sehingga berbentuk segitiga, bulat, atau seperti karung beras
+        </dd>
+    </dl>
 </body>
 
 </html>
 ```
 
-!!!Example "Output elemen `<u>` (underline)"
+#### <h3>&lt;dt&gt;</h3>
+Elemen ini digunakan untuk memuat istilah yang sedang didefinisikan (definition term / istilah definisi)
+```html title="dt.html"
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemen underline</title>
+    <title>Element dt</title>
 </head>
 
 <body>
-
-    <p>This is some <u>mispeled</u> text.</p>
-
-</body>
-
-</html>
-
-### <h3>&lt;small&gt;</h3>
-Elemen ini digunakan untuk menampilkan teks dengan ukuran yang lebih kecil dari teks yang ada disekitarnya. Biasanya teks ini digunakan untuk kebutuhan hak cipta atau _side comment_.
-
-```html title="elemen_small.html"
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemen small</title>
-</head>
-
-<body>
-
-    <p>
-        Ini adalah elemen paragraf
-    </p>
-
-    <p>
-        <p><small>&copy; 2025 ABCD. Semua hak cipta dilindungi.</small></p>
-    </p>
-
-
+    <dl>
+        <dt>Sushi</dt>
+        <dd>
+            adalah makanan Jepang yang terdiri dari nasi yang dibentuk bersama lauk (neta) berupa makanan laut, daging, sayuran bakar atau sudah dimasak.
+        </dd>
+        <dt>Onigiri</dt>
+        <dd>
+            adalah nama Jepang untuk makanan berupa nasi yang dipadatkan sewaktu masih hangat sehingga berbentuk segitiga, bulat, atau seperti karung beras
+        </dd>
+    </dl>
 </body>
 
 </html>
 ```
-!!! Example "Output elemen `<small>`"
+#### <h3>&lt;dd&gt;</h3>
+Elemen ini digunakan untuk memuat sebuah penjelasan dari term / istilah yang sedang didefinisikan
+```html title="dt.html"
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemen small</title>
+    <title>Element dd</title>
 </head>
 
 <body>
-
-    <p>
-        Ini adalah elemen paragraf
-    </p>
-
-    <p>
-        <p><small>&copy; 2025 ABCD. Semua hak cipta dilindungi.</small></p>
-    </p>
-
-
-</body>
-
-</html>
-
-### <h3>&lt;q&gt; (qoute)</h3>
-Elemen ini digunakan untuk kutipan pendek yang berada dalam paragraf. 
-
-```html title="elementq.html"
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemen q</title>
-</head>
-
-<body>
-
-    <p>As A.A. Milne said, <q>Some people talk to
-            animals. Not many listen though. That's the
-            problem.</q></p>
-
-
-</body>
-
-</html>
-```
-!!! Example "Output elemen <`q`> (quote)"
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemen q</title>
-</head>
-
-<body>
-
-    <p>As A.A. Milne said, <q>Some people talk to
-            animals. Not many listen though. That's the
-            problem.</q></p>
-
-
-</body>
-
-</html>
-
-### <h3>&lt;abbr&gt; (abbreviations)</h3>
-Elemen ini digunakan untuk menandai singkatan atau akronim dalam sebuah teks.
-
-```html title="elemenabbr.html"
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemen abbr</title>
-</head>
-
-<body>
-<p>
-    The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
-</p>
+    <dl>
+        <dt>Sushi</dt>
+        <dd>
+            adalah makanan Jepang yang terdiri dari nasi yang dibentuk bersama lauk (neta) berupa makanan laut, daging, sayuran bakar atau sudah dimasak.
+        </dd>
+        <dt>Onigiri</dt>
+        <dd>
+            adalah nama Jepang untuk makanan berupa nasi yang dipadatkan sewaktu masih hangat sehingga berbentuk segitiga, bulat, atau seperti karung beras
+        </dd>
+    </dl>
 </body>
 
 </html>
 ```
 
-!!!Example "Output elemen `<abbr>`"
+!!! example "Output elemen <`dl`>, <`dt`> dan <`dd`>"
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemen abbr</title>
+    <title>Element dd</title>
 </head>
 
 <body>
-<p>
-    The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
-</p>
+    <dl>
+        <dt>Sushi</dt>
+        <dd>
+            adalah makanan Jepang yang terdiri dari nasi yang dibentuk bersama lauk (neta) berupa makanan laut, daging, sayuran bakar atau sudah dimasak.
+        </dd>
+        <dt>Onigiri</dt>
+        <dd>
+            adalah nama Jepang untuk makanan berupa nasi yang dipadatkan sewaktu masih hangat sehingga berbentuk segitiga, bulat, atau seperti karung beras
+        </dd>
+    </dl>
 </body>
 
 </html>
 
-### <h3>&lt;cite&gt; (citation)</h3>
-Elemen ini digunakan untuk memberikan referensi ketika mengambil sumber dari buku, tulisan orang lain atau referensi ilmiah (paper penelitian / riset).
+### Link
 
-```html title="elemencite.html"
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemen  cite</title>
-</head>
-<body>
-    <p>
-        <cite>The Scream</cite>by Edward Munch. Painted in 1893.
-    </p>
-</body>
-</html>
-```
 
-!!! Example "Output elemen `<cite>`"
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemen  cite</title>
-</head>
-<body>
-    <p>
-        <cite>The Scream</cite>by Edward Munch. Painted in 1893.
-    </p>
-</body>
-</html>
-
-### <h3>&lt;dfn&gt; (define terms)</h3>
-Elemen ini digunakan untuk menjelaskan beberapa terminologi baru (seperti konsep akademis atau jargon) dalam sebuah dokumen.
-
-```html title="elemendfn.html"
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemen cite</title>
-</head>
-
-<body>
-    <p>
-        <dfn>HTML</dfn>is standard markup language for creating web pages
-    </p>
-</body>
-
-</html>
-```
-!!! Example "Output elemen `<dfn>`"
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemen cite</title>
-</head>
-
-<body>
-    <p>
-        <dfn>HTML</dfn> is standard markup language for creating web pages
-    </p>
-</body>
-
-</html>
-
-### <h3>&lt;sup&gt; (supscript)</h3>
-Elemen ini digunakan untuk memunculkan teks kecil di atas garis normal teks. Umumnya digunakan untuk Notasi matematika (contoh: pangkat) atau catatan kaki (footnote).
-
-```html title="elemensup.html"
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemen supscript</title>
-</head>
-
-<body>
-    <p>
-        This is supscript
-    </p>
-    E = MC<sup>2</sup>
-</body>
-
-</html>
-```
-
-!!! Example "Output elemen `<sup>`"
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemen supscript</title>
-</head>
-
-<body>
-    <p>
-        This is supscript
-    </p>
-    E = MC<sup>2</sup>
-</body>
-
-</html>
-
-### <h3>&lt;sub&gt; (subscript)</h3>
-Elemen ini digunakan untuk memunculkan teks kecil di bawah garis normal teks. Umumnya digunakan untuk rumus kimia.
-
-```html title="elemensup.html"
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemen supscript</title>
-</head>
-
-<body>
-    <p>
-        This is subscript
-    </p>
-    H<sub>2</sub>O
-</body>
-
-</html>
-```
-
-!!! Example "Output elemen `<sub>`"
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemen subscript</title>
-</head>
-
-<body>
-    <p>
-        This is subscript
-    </p>
-    H<sub>2</sub>O
-</body>
-
-</html>
-
-### <h3>&lt;mark&gt;</h3>
-### <h3>&lt;time&gt;</h3>
-### <h3>&lt;data&gt;</h3>
-### <h3>&lt;ins&gt; (inserted)</h3>
-Elemen ini digunakan untuk menunjukan bahwa sebuah konten telah dimasukan ke dalam sebuah dokumen.
-```html title="elemen_ins.html"
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemen ins dan del</title>
-</head>
-
-<body>
-    <p>It was the <del>worst</del> <ins>best</ins> idea
-        she had ever had.</p>
-</body>
-
-</html>
-```
-!!! Example "Output elemen `<ins>`"
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemen ins dan del</title>
-</head>
-
-<body>
-    <p>It was the <del>worst</del> <ins>best</ins> idea
-        she had ever had.</p>
-</body>
-
-</html>
-
-### <h3>&lt;del&gt; (deleted)</h3>
-Elemen ini adalah kebalikan dari elemen ins. Elemen ini digunakan untuk menunjukan bahwa sebuah konten telah dihilangkan dari dalam dokumen.
-
-```html title="elemen_del.html"
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemen ins dan del</title>
-</head>
-
-<body>
-    <p>It was the <del>worst</del> <ins>best</ins> idea
-        she had ever had.</p>
-</body>
-
-</html>
-```
-
-!!! Example "Output elemen `<del>`"
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemen ins dan del</title>
-</head>
-
-<body>
-    <p>It was the <del>worst</del> <ins>best</ins> idea
-        she had ever had.</p>
-</body>
-
-</html>
-
-### <h3>&lt;br&gt;</h3>
-Elemen ini digunakan untuk membuat baris baru / jeda baris di tengah paragraf.
-
-```html title="elemenbr.html"
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemen br</title>
-</head>
-
-<body>
-    <p>
-        Jl. Contoh. No. 12356.<br>
-        Indonesia. Jawa Barat
-    </p>
-</body>
-
-</html>
-```
-
-!!! Example "Output elemen br"
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elemen br</title>
-</head>
-
-<body>
-    <p>
-        Jl. Contoh. No. 12356.<br>
-        Indonesia. Jawa Barat
-    </p>
-</body>
-
-</html>
-
-### <h3>&lt;wbr&gt;</h3>
-
-### <h3>&lt;div&gt;</h3>
-Elemen ini digunakan untuk mengelompokan konten yang bertipe blok (_block element_). Tag ini dapat menggunakan atribut id dan class agar dapat dimanipulasi oleh CSS atau JavaScript.
-
-```html title="div.html"
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Div and Span Element in HTML</title>
-</head>
-
-<body>
-    <!--Div element: Tag element to grouping block of content (block element)-->
-    <div class="listing">
-        <img src="/frontend/asset/blackgoose.png" alt="blackgoose-logo">
-        <p><cite>The Complete Manual of Typography</cite>, James Felici</p>
-        <p>A Combination of type history and example of good or bad type design</p>
-    </div>
-
-    <div id="news">
-        <h1>New Thid Week</h1>
-        <p>We've been working on</p>
-        <p>And last but not least, ....</p>
-    </div>
-```
-
-!!! example "Output elemen `<div>`"
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Div and Span Element in HTML</title>
-</head>
-
-<body>
-    <!--Div element: Tag element to grouping block of content (block element)-->
-    <div class="listing">
-        <img src="/frontend/asset/blackgoose.png" alt="">
-        <p><cite>The Complete Manual of Typography</cite>, James Felici</p>
-        <p>A Combination of type history and example of good or bad type design</p>
-    </div>
-
-    <div id="news">
-        <h1>New Thid Week</h1>
-        <p>We've been working on</p>
-        <p>And last but not least, ....</p>
-    </div>
-    
-</body>
-
-</html>
-
-### <h3>&lt;span&gt;</h3>
-Elemen ini digunakan untuk mengelompokan konten inline (_inline element_). Tag ini dapat menggunakan atribut id dan class agar dapat dimanipulasi oleh CSS atau JavaScript.
-
-```html title="elemen span"
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Div and Span Element in HTML</title>
-</head>
-
-<body>
-<!--Span element: Tag element to group inline content (inline element)-->
-    <li>John: <span class="tel">999.8282</span></li>
-    <li>Paul: <span class="tel">888.4889</span></li>
-    <li>George: <span class="tel">888.1628</span></li>
-    <li>Ringo: <span class="tel">999.3220</span></li>
-</body>
-
-</html>
-```
-
-!!! example "Output elemen `<span>`"
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Div and Span Element in HTML</title>
-</head>
-
-<body>
-<!--Span element: Tag element to group inline content (inline element)-->
-    <li>John: <span class="tel">999.8282</span></li>
-    <li>Paul: <span class="tel">888.4889</span></li>
-    <li>George: <span class="tel">888.1628</span></li>
-    <li>Ringo: <span class="tel">999.3220</span></li>
-</body>
-
-</html>
-
-
-#### Notes
-!!! info "Tabel perbedaan elemen div dan span"
-    
-    | Perbedaan            | `<div>`          | `<span>`              |
-    |----------------------|------------------|------------------------|
-    | Jenis Elemen         | Block Level      | Inline Level           |
-    | Tampilan Dalam Website | Mulai Baris Baru | Dalam Baris            |
-    | Kegunaan             | Layout, Container| Penyorotan teks        |
-
-!!! info "Atribut id dan class"
-
-    - `id` digunakan untuk identifikasi **unik** pada satu elemen HTML.
-    - `class` digunakan untuk **mengelompokkan beberapa elemen** yang memiliki gaya atau fungsi yang sama.
-    - Baik `id` maupun `class` adalah **atribut global** dalam HTML, yang berarti bisa digunakan di hampir semua elemen.
-
-
-### <h3>&lt;a&gt;</h3>
+#### <h3>&lt;a&gt;</h3>
 Elemen ini biasanya digunakan untuk menambahkan hyperlink ke dalam sebuah website. Fungsinya biasanya untuk membuat tautan ke situs lain, ke halaman di dalam situs sendiri atau ke bagian tertentu dalam halaman yang sama. Tujannya adalah agar dapat memudahkan navigasi konten di dalam maupun di luar website. 
 
 #### Notes
@@ -1870,7 +1186,72 @@ mailto digunakan untuk membuka program email pengguna dan mengarahkan email ke a
 | Link ke bagian spesifik di dalam halaman yang sama   | `#section1`                         | `<a href="#section1">Lompat ke Section 1</a>`                    | Mengarah ke elemen dengan `id="section1"` di halaman yang sama.           |
 | Link ke bagian spesifik di halaman lain  | `page.html#section1`               | `<a href="page.html#section1">Lompat ke Section 1 di Halaman Lain</a>` | Mengarahkan ke elemen dengan `id="section1"` di halaman lain bernama `page.html`. Berguna untuk langsung menuju bagian tertentu pada halaman lain. |
 
-### <h3>&lt;img&gt;</h3>
+
+### Images
+
+#### <h3>&lt;figure&gt;</h3>
+Elemen ini adalah elemen yang berdiri sendiri. Elemen ini digunakan untuk membungkus konten seperti gambar, ilustrasi, diagram, cuplikan kode, dll.
+```html title="figure.html"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element figure</title>
+</head>
+
+<body>
+<figure>
+    <img src="/frontend/asset/blackgoose.png" alt="Logo produk">
+</figure>
+</body>
+
+</html>
+```
+#### <h3>&lt;figcaption&gt;</h3>
+Elemen ini digunakan untuk menambahkan caption / keterangan dalam sebuah gambar, ilustrasi, diagram, cuplikan kode, dll.
+```html title="figcaption.html"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element figcaption</title>
+</head>
+
+<body>
+<figure>
+    <img src="/frontend/asset/blackgoose.png" alt="Logo produk">
+    <figcaption>Gambar 1. Logo Produk</figcaption>
+</figure>
+</body>
+
+</html>
+```
+!!! example "Output elemen <`figure`> dan <`figcaption`>"
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element figure caption</title>
+</head>
+
+<body>
+<figure>
+    <img src="/frontend/asset/blackgoose.png" alt="Logo produk">
+    <figcaption>Gambar 1. Logo Produk</figcaption>
+</figure>
+</body>
+
+</html>
+
+
+#### <h3>&lt;img&gt;</h3>
 Elemen ini digunakan untuk menambahkan / menyisipkan gambar ke dalam sebuah _webpage_.
 
 ```html title="img.html"
@@ -1901,17 +1282,6 @@ Elemen ini digunakan untuk menambahkan / menyisipkan gambar ke dalam sebuah _web
 ```
 
 !!! example "Output Elemen `<img>`"
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Element</title>
-</head>
-<body>
-    <!-- Elemen img digunakan untuk menyisipkan gambar ke halaman web. -->
-    <!-- Atribut seperti width, height, dan align dapat digunakan, namun lebih baik mengatur gaya melalui CSS. -->
     <img src="/frontend/asset/blackgoose.png" alt="Logo BlackGoose" width="120" height="120" align="left">
 
     <!-- Alternatif: Gunakan <figure> dan <figcaption> untuk menambahkan keterangan gambar -->
@@ -1923,6 +1293,940 @@ Elemen ini digunakan untuk menambahkan / menyisipkan gambar ke dalam sebuah _web
         -->
 </body>
 </html>
+
+
+### Tables
+
+#### <h3>&lt;table&gt;</h3>
+
+Tag elemen `<table>` digunakan untuk menginisiasi pembuatan table. 
+
+#### <h3>&lt;tr&gt;</h3>
+
+Tag elemen `<tr>` digunakan untuk meninisiasi row (elemen horizontal) dalam table.
+
+#### <h3>&lt;td&gt;</h3>
+
+Tag elemen `<td>` digunakan untuk merepresentasikan data / cell dalam table.
+
+
+!!! info "Contoh penerapan tag elemen `<table>`, `<tr>`, dan <`td`>"
+
+```html title="table.html"
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML - Table Element</title>
+</head>
+<body>
+  <table>
+    <tr>
+      <td>AAA</td>
+      <td>BBB</td>
+      <td>CCC</td>
+    </tr>
+    <tr>
+      <td>DDD</td>
+      <td>EEE</td>
+      <td>FFF </td>
+    </tr>
+  </table>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML - Table Element</title>
+</head>
+<body>
+  <table>
+    <tr>
+      <td>AAA</td>
+      <td>BBB</td>
+      <td>CCC</td>
+    </tr>
+    <tr>
+      <td>DDD</td>
+      <td>EEE</td>
+      <td>FFF </td>
+    </tr>
+  </table>
+</body>
+</html>
+```
+
+!!! example "Output elemen `<table>`, <`tr`>, dan `<td>`"
+
+
+
+#### <h3>&lt;th&gt;</h3>
+  
+Tag elemen `<th>` digunakan untuk membuat header dalam sebuah coloumn ataupun row.
+
+!!! info "Output elemen `<th>`"
+
+```html title="th.html"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML - Table Element</title>
+</head>
+
+<body>
+  <table>
+    <tr>
+      <th></th>
+      <th scope="col">Coloumn Area</th>
+      <th scope="col">Coloumn Area 2</th>
+    </tr>
+    <th scope="row">Row Area</th>
+    <td>AAA</td>
+    <td>BBB</td>
+    </tr>
+    <tr>
+      <th scope="row">Total sales:</th>
+      <td>$600</td>
+      <td>$675</td>
+    </tr>
+  </table>
+</body>
+
+</html>
+```
+
+#### <h3>&lt;thead&gt;</h3>
+
+Grup konten heading dalam tabel
+
+#### <h3>&lt;tbody&gt;</h3>
+
+Grup konten body dalam tabel
+
+#### <h3>&lt;tfoot&gt;</h3>
+
+Grup konten footer dalam tabel
+
+!!! info "Contoh penerapan elemen `<thead>`, `<tbody>`, `<tfoot>`"
+
+```html title="tablelement.html"
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HTML - Table Element</title>
+</head>
+
+<body>
+  <table>
+    <thead>
+      <tr>
+        <th scope="col">Area A</th>
+        <th scope="col">Area B</th>
+        <th scope="col">Area C</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th scope="row">1</th>
+        <td>AAA</td>
+        <td>BBB</td>
+      </tr>
+      <tr>
+        <th scope="row">2</th>
+        <td>$600</td>
+        <td>$675</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <th scope="row">Total</th>
+        <td>$600</td>
+        <td>$675</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+
+</html>
+```
+
+### Form
+
+#### <h3>&lt;form&gt;</h3>
+
+Tag elemen ini digunakan untuk mengumpulkan data / user input dalam sebuah website. Atribut _action_ mendefinisikan ke mana data dikirim ketika user menekan tombol _submit_. _Method_ adalah metode HTTP yang akan digunakan untuk mengirimkan data ke server. 
+
+!!! info "Penggunaan GET method dalam Form HTML"
+
+- Digunakan untuk format pendek (_short form_) seperti _search box_
+- Retrieving data / meminta dari server.
+
+!!! info "Penggunaan POST method dalam Form HTML"
+
+- Mengupload file. 
+- Mengirimkan data / form yang panjang. 
+- Data sensitif (password, email, etc).
+- Menambah atau menghapus data dari sebuah database.
+
+#### <h3>&lt;input&gt;</h3>
+
+Tag elemen ini digunakan untuk menentukan jenis inputan apa yang ingin dikirim ke server. Berikut ini terdapat beberapa input type dalam tag `<input>`
+
+##### `<input type="text">`
+
+Input type bertipe text. elemen inputnya adalah kolom isian teks satu baris.
+
+```html
+<input type="text" id="username" name="username" minlength="10" maxlength="99" required>
+```
+
+!!! info "Penjelasan masing-masing atribut"
+
+1. `type=text` : Menentukan jenis input. Input yang digunakan kali ini adalah isian teks satu baris.
+2. `id=username` : Memberikan identitas unik untuk elemen ini. Biasanya digunakan di label.
+3. `name="username"` : Memberikan identitas unik pada form, sehingga form bisa diakses atau dikenali di Javascript atau saat datanya di kirim ke server.
+4. `minlength="10"` : Menentukan minimal jumlah karakter yang harus diisi. 
+5. `maxlength="99"` : Menentukan maksimal jumlah karakter yang harus diisi. 
+6. `required` : Menandakan bahwa input teks harus diisi, tidak boleh kosong. Biasanya ini digunakan untuk proses _form validation_
+
+```html title="inputext.html"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Tag Element HTML</title>
+</head>
+
+<body>
+  <form action="script.php" method="POST">
+    <label for="username">
+      Username
+    </label><br>
+    <input type="text" id="username" name="username" minlength="10" maxlength="99" required>
+  </form>
+</body>
+
+</html>
+```
+
+##### `<input type="password">`
+
+Input type bertipe password. Elemen inputnya adalah sama seperti input type text, tetapi karakter input / isiannya disembunyikan dengan karakter (*) atau (.).
+
+```html title="inputpassword.html"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Tag Element HTML</title>
+</head>
+
+<body>
+  <form action="script.php" method="POST">
+    <label for="username">
+      Username
+    </label><br>
+    <input type="text" id="username" name="username" minlength="10" maxlength="99" required>
+  </form>
+
+  <label for="password">
+    Password
+  </label><br>
+  <input type="password" id="password" name="password" required>
+</body>
+</html>
+```
+
+### <h3>&lt;textarea&gt;</h3>
+
+`<textarea>` adalah element yang digunakan untuk menampung input lebih dari satu baris teks / inputan (_multi-line text input_). 
+
+```html title="textarea.html"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Form Textarea</title>
+  <link rel="stylesheet" href="form.css" />
+</head>
+
+<body>
+  <form action="textarea.php" method="POST">
+    <label for="Contact">Contact</label><br />
+    <textarea name="personal_contact" id="Contact" cols="50" rows="4">
+Type your message</textarea>
+  </form>
+</body>
+
+</html>
+```
+
+### Misc Element
+
+#### <h3>&lt;header&gt;</h3>
+Elemen ini digunakan untuk mendefinisikan pembuka dari halaman suatu web. Biasanya muncul di bagian atas web atau artikel.
+```html title="header.html"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Element</title>
+</head>
+<body>
+    <header>
+        <img src="/frontend/asset/blackgoose.png" alt="logo">
+        <h1>Web Font</h1>
+    </header>
+</body>
+</html>
+```
+
+!!! example "Output elemen <`header`>"
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Element</title>
+</head>
+<body>
+    <header>
+        <img src="/frontend/asset/blackgoose.png" alt="logo">
+        <h1>Web Font</h1>
+    </header>
+</body>
+</html>
+
+#### <h3>&lt;footer&gt;</h3>
+Elemen ini digunakan untuk mendefinisikan penutup dari halaman suatu web. Biasanya muncul di bagian bawah web atau artikel dan berisi informasi seperti penulis (author), hak cipta (copyright), tautan ke dokumen terkait atau navigasi tambahan. 
+
+```html title="footer.html"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Elemen Footer</title>
+</head>
+<body>
+
+  <header>
+    <h1>Selamat Datang di Website Saya</h1>
+  </header>
+
+  <main>
+    <p>Ini adalah konten utama dari halaman web.</p>
+  </main>
+
+  <footer>
+    <p>Hak Cipta &copy; 2025 - ABCD</p>
+    <p>Dibuat oleh <a href="https://github.com/" target="_blank">ABCD</a></p>
+  </footer>
+
+</body>
+</html>
+```
+
+!!! example "Output elemen <`footer`>"
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Elemen Footer</title>
+</head>
+<body>
+
+  <header>
+    <h1>Selamat Datang di Website Saya</h1>
+  </header>
+
+  <main>
+    <p>Ini adalah konten utama dari halaman web.</p>
+  </main>
+
+  <footer>
+    <p>Hak Cipta &copy; 2025 - ABCD</p>
+    <p>Dibuat oleh <a href="https://github.com/" target="_blank">ABCD</a></p>
+  </footer>
+
+</body>
+</html>
+
+#### <h3>&lt;nav&gt;</h3>
+Elemen ini digunakan untuk mendefinisikan bagian navigasi dalam sebuah situs web. Biasanya berisi tautan (link) yang mengarahkan pengguna ke halaman lain di dalam situs tersebut atau ke bagian tertentu dari halaman yang sama.
+```html title="nav.html"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELemen nav</title>
+</head>
+<body>
+    <nav>
+    <ul>
+      <li><a href="#beranda">Beranda</a></li>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#layanan">Layanan</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <section id="beranda">
+    <h2>Beranda</h2>
+    <p>Selamat datang di website kami!</p>
+  </section>
+
+  <section id="tentang">
+    <h2>Tentang Kami</h2>
+    <p>Ini adalah catatan pribadi.</p>
+  </section>
+
+  <section id="layanan">
+    <h2>Layanan</h2>
+    <p>Catatan Pribadi.</p>
+  </section>
+
+  <section id="kontak">
+    <h2>Kontak</h2>
+    <p>Email: info@contoh.com</p>
+  </section>
+
+</body>
+</html>
+```
+
+!!! example "Output elemen <`nav`>"
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ELemen nav</title>
+</head>
+<body>
+    <nav>
+    <ul>
+      <li><a href="#beranda">Beranda</a></li>
+      <li><a href="#tentang">Tentang</a></li>
+      <li><a href="#layanan">Layanan</a></li>
+      <li><a href="#kontak">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <section id="beranda">
+    <h2>Beranda</h2>
+    <p>Selamat datang di website kami!</p>
+  </section>
+
+  <section id="tentang">
+    <h2>Tentang Kami</h2>
+    <p>Ini adalah catatan pribadi.</p>
+  </section>
+
+  <section id="layanan">
+    <h2>Layanan</h2>
+    <p>Catatan Pribadi.</p>
+  </section>
+
+  <section id="kontak">
+    <h2>Kontak</h2>
+    <p>Email: info@contoh.com</p>
+  </section>
+
+</body>
+</html>
+
+#### <h3>&lt;section&gt;</h3>
+Elemen ini digunakan untuk mengelompokan konten terkait secara bersama-sama, dan biasanya setiap bagian konten memiliki judulnya sendiri.
+
+```html title="section.html"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemen section</title>
+</head>
+<body>
+  <section>
+    <h2>Beranda</h2>
+    <p>Selamat datang di website kami!</p>
+  </section>
+
+  <section>
+    <h2>Tentang Kami</h2>
+    <p>Ini adalah catatan pribadi.</p>
+  </section>
+
+  <section>
+    <h2>Layanan</h2>
+    <p>Catatan Pribadi.</p>
+  </section>
+
+  <section>
+    <h2>Kontak</h2>
+    <p>Email: info@contoh.com</p>
+  </section>
+
+</body>
+</html>
+```
+
+!!! example "Output elemen <`section`>"
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemen section</title>
+</head>
+<body>
+  <section>
+    <h2>Beranda</h2>
+    <p>Selamat datang di website kami!</p>
+  </section>
+
+  <section>
+    <h2>Tentang Kami</h2>
+    <p>Ini adalah catatan pribadi.</p>
+  </section>
+
+  <section>
+    <h2>Layanan</h2>
+    <p>Catatan Pribadi.</p>
+  </section>
+
+  <section>
+    <h2>Kontak</h2>
+    <p>Email: info@contoh.com</p>
+  </section>
+
+</body>
+</html>
+
+#### <h3>&lt;article&gt;</h3>
+Elemen ini digunakan untuk konten mandiri yang dapat berdiri sendiri atau digunakan kembali dalam konteks yang berbeda. Biasanya elemen ini digunakan untuk artikel majalah, atau surat kabar, postingan blog, komentar atau item lain.
+
+```html title="article.html"
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemen artikel</title>
+</head>
+<body>
+    <article>
+        <h2>Ini adalah contoh penggunaan elemen artikel</h2>
+        <p>
+        Belajar pemrograman membantu meningkatkan logika dan kemampuan problem solving. Ini juga membuka peluang karir yang luas di bidang teknologi
+        </p>
+    </article>
+</body>
+</html>
+```
+!!! example "Output elemen <`article`>"
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemen artikel</title>
+</head>
+<body>
+    <article>
+        <h2>Ini adalah contoh penggunaan elemen artikel</h2>
+        <p>
+        Belajar pemrograman membantu meningkatkan logika dan kemampuan problem solving. Ini juga membuka peluang karir yang luas di bidang teknologi
+        </p>
+    </article>
+</body>
+</html>
+
+#### <h3>&lt;aside&gt;</h3>
+Elemen ini digunakan untuk memberikan informasi tambahan. Contohnya, dalam sebuah elemen artikel aside biasanya akan menampung informasi yang berhubungan dengan artikel tetapi tidak essential untuk artikel secara keseluruhan. Sebagai contoh, menambahkan pullquote atau glosarium. Elemen ini juga dapat digunakan diluar elemen artikel untuk menampung informasi yang terakit dalam suatu halaman di dalam webpage.
+
+Aside dalam elemen artikel (pullquote):
+```html title="aside.html"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemen aside sebagai pullquote</title>
+</head>
+
+<body>
+    <article>
+        <h2>Mengapa Python Cocok untuk Pemula?</h2>
+        <p>Python adalah bahasa pemrograman yang sangat populer karena sintaksnya yang sederhana dan mudah dipahami,
+            terutama bagi pemula.</p>
+
+        <aside>
+            <blockquote>
+                "Python dirancang agar bisa dibaca seperti bahasa manusia — itulah kekuatan utamanya."
+            </blockquote>
+        </aside>
+
+        <p>Selain itu, Python juga didukung oleh komunitas besar dan pustaka (library) yang lengkap, mulai dari
+            pengolahan data hingga pengembangan web dan kecerdasan buatan.</p>
+    </article>
+
+
+</body>
+
+</html>
+```
+!!! example "Output elemen <`aside`> sebagai pullquote"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemen aside sebagai pullquote</title>
+</head>
+
+<body>
+    <article>
+        <h2>Mengapa Python Cocok untuk Pemula?</h2>
+        <p>Python adalah bahasa pemrograman yang sangat populer karena sintaksnya yang sederhana dan mudah dipahami,
+            terutama bagi pemula.</p>
+
+        <aside>
+            <blockquote>
+                "Python dirancang agar bisa dibaca seperti bahasa manusia — itulah kekuatan utamanya."
+            </blockquote>
+        </aside>
+
+        <p>Selain itu, Python juga didukung oleh komunitas besar dan pustaka (library) yang lengkap, mulai dari
+            pengolahan data hingga pengembangan web dan kecerdasan buatan.</p>
+    </article>
+
+
+</body>
+
+</html>
+
+
+Aside sebagai glosarium:
+```html title="aside_glosarium.html"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemen aside sebagai glosarium</title>
+</head>
+
+<body>
+    <article>
+        <h2>Dasar-Dasar Fungsi di Python</h2>
+        <p>Fungsi di Python digunakan untuk mengelompokkan kode agar dapat digunakan kembali dan membuat program lebih
+            rapi.</p>
+
+        <aside>
+            <h3>Glosarium</h3>
+            <ul>
+                <li><strong>Fungsi:</strong> Blok kode yang hanya dijalankan saat dipanggil.</li>
+                <li><strong>Parameter:</strong> Variabel yang diteruskan ke dalam fungsi.</li>
+                <li><strong>Return:</strong> Nilai yang dikembalikan oleh fungsi setelah dieksekusi.</li>
+            </ul>
+        </aside>
+
+        <p>Kita bisa membuat fungsi sendiri menggunakan kata kunci <code>def</code> dan memanggilnya sesuai kebutuhan.
+        </p>
+    </article>
+
+
+
+</body>
+
+</html>
+```
+!!! example "Output elemen <`aside`> sebagai glosarium"
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemen aside sebagai glosarium</title>
+</head>
+
+<body>
+    <article>
+        <h2>Dasar-Dasar Fungsi di Python</h2>
+        <p>Fungsi di Python digunakan untuk mengelompokkan kode agar dapat digunakan kembali dan membuat program lebih
+            rapi.</p>
+
+        <aside>
+            <h3>Glosarium</h3>
+            <ul>
+                <li><strong>Fungsi:</strong> Blok kode yang hanya dijalankan saat dipanggil.</li>
+                <li><strong>Parameter:</strong> Variabel yang diteruskan ke dalam fungsi.</li>
+                <li><strong>Return:</strong> Nilai yang dikembalikan oleh fungsi setelah dieksekusi.</li>
+            </ul>
+        </aside>
+
+        <p>Kita bisa membuat fungsi sendiri menggunakan kata kunci <code>def</code> dan memanggilnya sesuai kebutuhan.
+        </p>
+    </article>
+
+
+
+</body>
+
+</html>
+
+
+#### <h3>&lt;u&gt; (underline)</h3>
+Elemen ini digunakan untuk teks atau tulisan yang ditata atau diartikulasikan berbeda dari teks yang normal / pada umumnya, seperti kata yang salah pengejaan atau nama seseorang dalam bahasa Mandarin (Chinese Text).
+
+```html title="elemen_u"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemen underline</title>
+</head>
+
+<body>
+
+    <p>This is some <u>mispeled</u> text.</p>
+
+</body>
+
+</html>
+```
+
+!!!Example "Output elemen `<u>` (underline)"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemen underline</title>
+</head>
+
+<body>
+
+    <p>This is some <u>mispeled</u> text.</p>
+
+</body>
+
+</html>
+
+#### <h3>&lt;small&gt;</h3>
+Elemen ini digunakan untuk menampilkan teks dengan ukuran yang lebih kecil dari teks yang ada disekitarnya. Biasanya teks ini digunakan untuk kebutuhan hak cipta atau _side comment_.
+
+```html title="elemen_small.html"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemen small</title>
+</head>
+
+<body>
+
+    <p>
+        Ini adalah elemen paragraf
+    </p>
+
+    <p>
+        <p><small>&copy; 2025 ABCD. Semua hak cipta dilindungi.</small></p>
+    </p>
+
+
+</body>
+
+</html>
+```
+!!! Example "Output elemen `<small>`"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elemen small</title>
+</head>
+
+<body>
+
+    <p>
+        Ini adalah elemen paragraf
+    </p>
+
+    <p>
+        <p><small>&copy; 2025 ABCD. Semua hak cipta dilindungi.</small></p>
+    </p>
+
+
+</body>
+
+</html>
+
+
+
+#### <h3>&lt;mark&gt;</h3>
+#### <h3>&lt;time&gt;</h3>
+#### <h3>&lt;data&gt;</h3>
+
+
+
+#### <h3>&lt;wbr&gt;</h3>
+
+#### <h3>&lt;div&gt;</h3>
+Elemen ini digunakan untuk mengelompokan konten yang bertipe blok (_block element_). Tag ini dapat menggunakan atribut id dan class agar dapat dimanipulasi oleh CSS atau JavaScript.
+
+```html title="div.html"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div and Span Element in HTML</title>
+</head>
+
+<body>
+    <!--Div element: Tag element to grouping block of content (block element)-->
+    <div class="listing">
+        <img src="/frontend/asset/blackgoose.png" alt="blackgoose-logo">
+        <p><cite>The Complete Manual of Typography</cite>, James Felici</p>
+        <p>A Combination of type history and example of good or bad type design</p>
+    </div>
+
+    <div id="news">
+        <h1>New Thid Week</h1>
+        <p>We've been working on</p>
+        <p>And last but not least, ....</p>
+    </div>
+```
+
+!!! example "Output elemen `<div>`"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div and Span Element in HTML</title>
+</head>
+
+<body>
+    <!--Div element: Tag element to grouping block of content (block element)-->
+    <div class="listing">
+        <img src="/frontend/asset/blackgoose.png" alt="">
+        <p><cite>The Complete Manual of Typography</cite>, James Felici</p>
+        <p>A Combination of type history and example of good or bad type design</p>
+    </div>
+
+    <div id="news">
+        <h1>New Thid Week</h1>
+        <p>We've been working on</p>
+        <p>And last but not least, ....</p>
+    </div>
+    
+</body>
+
+</html>
+
+#### <h3>&lt;span&gt;</h3>
+Elemen ini digunakan untuk mengelompokan konten inline (_inline element_). Tag ini dapat menggunakan atribut id dan class agar dapat dimanipulasi oleh CSS atau JavaScript.
+
+```html title="elemen span"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div and Span Element in HTML</title>
+</head>
+
+<body>
+<!--Span element: Tag element to group inline content (inline element)-->
+    <li>John: <span class="tel">999.8282</span></li>
+    <li>Paul: <span class="tel">888.4889</span></li>
+    <li>George: <span class="tel">888.1628</span></li>
+    <li>Ringo: <span class="tel">999.3220</span></li>
+</body>
+
+</html>
+```
+
+!!! example "Output elemen `<span>`"
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Div and Span Element in HTML</title>
+</head>
+
+<body>
+<!--Span element: Tag element to group inline content (inline element)-->
+    <li>John: <span class="tel">999.8282</span></li>
+    <li>Paul: <span class="tel">888.4889</span></li>
+    <li>George: <span class="tel">888.1628</span></li>
+    <li>Ringo: <span class="tel">999.3220</span></li>
+</body>
+
+</html>
+
+
+#### Notes
+!!! info "Tabel perbedaan elemen div dan span"
+    
+    | Perbedaan            | `<div>`          | `<span>`              |
+    |----------------------|------------------|------------------------|
+    | Jenis Elemen         | Block Level      | Inline Level           |
+    | Tampilan Dalam Website | Mulai Baris Baru | Dalam Baris            |
+    | Kegunaan             | Layout, Container| Penyorotan teks        |
+
+!!! info "Atribut id dan class"
+
+    - `id` digunakan untuk identifikasi **unik** pada satu elemen HTML.
+    - `class` digunakan untuk **mengelompokkan beberapa elemen** yang memiliki gaya atau fungsi yang sama.
+    - Baik `id` maupun `class` adalah **atribut global** dalam HTML, yang berarti bisa digunakan di hampir semua elemen.
+
 
 
 

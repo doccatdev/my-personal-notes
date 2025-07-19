@@ -17,12 +17,12 @@ nav:
       - CSS: frontend/css/css.md
       - Javascript: frontend/javascript/javascript.md
       
-  - Networking (CCNA):
+  - Networking:
       - Getting Started: networking/Getting Started.md
-      - CCNA: networking/notes/ccnaintro.md
+      - Catatan: networking/notes/ccnaintro.md
       - Labs: networking/labs/labs.md
-  - Bug Bounty:
-      - Getting Started: bounty/Getting Started.md
+  - Kali Linux:
+      - Kali Linux Command: kali/kali.md
   - About:
       - Notes to Reader: about/notes.md
 
