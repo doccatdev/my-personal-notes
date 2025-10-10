@@ -16,7 +16,7 @@
     
     
       
-        <title>HTTP - Notes</title>
+        <title>HTTP Protocol - Notes</title>
       
     
     
@@ -92,7 +92,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              HTTP
+              HTTP Protocol
             
           </span>
         </div>
@@ -737,21 +737,14 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#http-protocol" class="md-nav__link">
-    <span class="md-ellipsis">
-      HTTP Protocol
-    </span>
-  </a>
-  
-</li>
       
         <li class="md-nav__item">
   <a href="#url-scheme" class="md-nav__link">
@@ -772,17 +765,17 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
+          <li class="md-nav__item">
   <a href="#http-request-method" class="md-nav__link">
     <span class="md-ellipsis">
       HTTP Request Method
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -830,9 +823,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#common-http-status-code" class="md-nav__link">
+  <a href="#common-http-response-status-code" class="md-nav__link">
     <span class="md-ellipsis">
-      Common HTTP Status Code
+      Common HTTP Response Status Code
     </span>
   </a>
   
@@ -859,18 +852,14 @@
 
 
 
-  <h1>HTTP</h1>
-
-<h3 id="http-protocol">HTTP Protocol</h3>
-<p><em>Hypertext Transfer Protocol</em> (HTTP) adalah protokol yang berada di belakang World Wide Web (WWW). 
+<h1 id="http-protocol">HTTP Protocol</h1>
+<p><em>Hypertext Transfer Protocol</em> (HTTP) adalah protokol yang berada di belakang World Wide Web (WWW).
 Protokol ini memungkinkan seseorang mengakses informasi dari web server yang berada di negara lain, dan menampilkan informasi tersebut ke perangkat komputer milik pribadi.</p>
-<h3 id="url-scheme">URL Scheme</h3>
+<h2 id="url-scheme">URL Scheme</h2>
 <p><em>Uniform Resource Locator</em> (URL) adalah rangkaian karakter yang digunakan sebagai penunjuk dari sebuah <em>resource</em> yang ada di internet. URL sendiri terdiri dari beberapa bagian. Berikut ini adalah bagian-bagian URL.</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>&lt;scheme&gt;://&lt;host&gt;:&lt;port&gt;/&lt;path&gt;?&lt;query string/parameter&gt;#&lt;fragment&gt;
-</span></code></pre></div>
-<h4 id="example-part-of-url">Example Part of URL</h4>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>https://www.example.com:443/blog/article/search?docid=720&amp;hl=en#dayone
-</span></code></pre></div>
+<p><code>&lt;scheme&gt;://&lt;host&gt;:&lt;port&gt;/&lt;path&gt;?&lt;query string/parameter&gt;#&lt;fragment&gt;</code></p>
+<h3 id="example-part-of-url">Example Part of URL</h3>
+<p><code>https://www.example.com:443/blog/article/search?docid=720&amp;hl=en#dayone</code></p>
 <div class="admonition note">
 <p class="admonition-title">Catatan untuk paramter / query string</p>
 </div>
@@ -916,35 +905,35 @@ Protokol ini memungkinkan seseorang mengakses informasi dari web server yang ber
 </tr>
 </tbody>
 </table>
-<h3 id="http-header">HTTP Header</h3>
-<h4 id="http-request-header">HTTP Request Header</h4>
+<h2 id="http-header">HTTP Header</h2>
+<h3 id="http-request-header">HTTP Request Header</h3>
 <p>Secara umum HTTP Request Header terdiri dari beberapa bagian berikut:</p>
 <div class="admonition info">
 <p class="admonition-title">Struktur HTTP Request Header</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>[HTTP Method] [URL] [HTTP Protocol Version]
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>[Headers]
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a>[Body]
+<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>[HTTP Method] [URL] [HTTP Protocol Version]
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>[Headers]
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>[Body]
 </span></code></pre></div>
 </div>
 <p>Berikut ini adalah isi dari HTTP Request Header
 <img alt="HTTP Request Header" src="../../asset/request_header.png" /></p>
-<h4 id="http-respone-header">HTTP Respone Header</h4>
-<p>HTTP Respone Header memiliki struktur yang mirip dengan HTTP Request Header. 
+<h3 id="http-respone-header">HTTP Respone Header</h3>
+<p>HTTP Respone Header memiliki struktur yang mirip dengan HTTP Request Header.
 Berikut ini beberapa bagiannya:</p>
 <div class="admonition info">
 <p class="admonition-title">Struktur HTTP Respone Header</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>[HTTP Protocol Version] [Status Code] [Reason]
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>[Header]
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>[Body]
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>[HTTP Protocol Version] [Status Code] [Reason]
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>[Header]
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>[Body]
 </span></code></pre></div>
 </div>
 <p>Berikut ini adalah isi dari HTTP Respone Header
 <img alt="HTTP Respone Header" src="../../asset/response_header.png" /></p>
-<h3 id="http-response-status-code">HTTP Response Status Code</h3>
+<h2 id="http-response-status-code">HTTP Response Status Code</h2>
 <p>Tabel HTTP Respone Status Code</p>
 <table>
 <thead>
@@ -976,7 +965,7 @@ Berikut ini beberapa bagiannya:</p>
 </tr>
 </tbody>
 </table>
-<h4 id="common-http-status-code">Common HTTP Status Code</h4>
+<h3 id="common-http-response-status-code">Common HTTP Response Status Code</h3>
 
 
 

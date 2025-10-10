@@ -1,7 +1,7 @@
-## Introduction to CCNA
-
+# Introduction to CCNA
 
 ## 1. Network
+
 _Network_ (_computer network_) adalah jaringan yang menghubungkan komputer satu sama lain ataupun _device_ lainnya. Atau _computer network_ dapat didefinisikan juga sebagai jaringan komunikasi (_communication network_) yang dapat memungkinkan _node_ untuk saling berbagi _resource_.
 
 !!! info "Node"
@@ -11,14 +11,17 @@ _Network_ (_computer network_) adalah jaringan yang menghubungkan komputer satu 
     _Resource_ adalah semua hal yang dapat diakses dan digunakan melalui jaringan. Contohnya, printer yang terkoneksi dalam jaringan dan digunakan bersama oleh pengguna di kantor, dsb.
 
 ## 2. Network Devices
+
 ### Type of Network Devices
 
 #### Client-Server
+
 ![Client-Server](../assets/img/client-server.PNG)
 
 Client disini sebagai _device_ yang mengakses / meminta layanan kepada _server_. _Server_ adalah sebuah _device_ yang menyediakan layanan untuk _client_
 
 #### Switch
+
 ![Switch](../assets/img/switch.PNG)
 
 _Switch_ adalah sebuah perangkat yang dapat menghubungkan beberapa _device_ (PC, Printer, Server, dll) agar dapat berhubungan dan berkomunikasi satu sama lain. Perangkat yang terkoneksi melalui _switch_ dapat berkomunikasi satu sama lain melalui _switch_
@@ -27,18 +30,19 @@ _Switch_ adalah sebuah perangkat yang dapat menghubungkan beberapa _device_ (PC,
     _Switch_ tidak dapat menyediakan layanan konektivitas antar LAN atau jaringan external, untuk melakukan hal tersebut dibutuhkan _device_ lain.
 
 #### Router
+
 ![Router](../assets/img/router.png)
 
 Router adalah sebuah perangkat yang menyediakan layanan agar LAN dapat berkomunikasi dengan jaringan eksternal seperti internet.
 
 !!! Note "Catatan mengenai _Wireless Router_ (_Wi-Fi_ / _home router_)"
-    _Wireless Router_ (_Wi-Fi_ / _home router_) adalah perangkat multifungsi yang menggabungkan _router_, _switch_, _wireless access point_, dan _firewall_ dalam satu perangkat. 
+    _Wireless Router_ (_Wi-Fi_ / _home router_) adalah perangkat multifungsi yang menggabungkan _router_, _switch_, _wireless access point_, dan _firewall_ dalam satu perangkat.
 
 #### Firewall
+
 ![Firewall](../assets/img/firewall.PNG)
 
 _Firewall_ adalah sistem yang berfungsi untuk memantau _traffic_ jaringan yang masuk atau keluar ke perangkat host. Sistem ini kemudian dapat menentukan apakah _traffic_ tersebut diizinkan atau diblokir berdasarkan serangkaian aturan yang telah ditetapkan.
-
 
 !!! info "LAN"
 
@@ -46,12 +50,12 @@ _Firewall_ adalah sistem yang berfungsi untuk memantau _traffic_ jaringan yang m
     contohnya seperti jaringan di kantor, rumah, kafe, dan lain sebagainya.
 
 !!! info "WAN"
-    
+
     **_Wide Area Network_** (WAN) adalah sekumpulan jaringan yang saling terhubung satu sama lain dalam area yang luas, contohnya jaringan antar kantor, wilayah, kota atau bahkan negara. 
 
 !!! Note "Cisco Device Keyword"
     - _Catalyst_ -> Cisco Switch (Cisco Catalyst)
-    - _Router_ -> Cisco ISR (_Integrated Service Router_) 
+    - _Router_ -> Cisco ISR (_Integrated Service Router_)
     - _Security_ -> Cisco ASA (_Adaptive Security Appliance_)
     - _Firepower_ -> Cisco NGFW (_Next Generation Firewall_)
 
@@ -75,21 +79,21 @@ RJ artinya Registered Jack
 
 Kecepatan internet dihitung berdasarkan satuan Bit bukan Byte.
 
-#### Common unit Measuring of Bits. 
+#### Common unit Measuring of Bits
 
-| Names | Equal to (Base 2) | Equal to (Base 10)|   
-|------------|-----------|-------------------|
-| 1 Kilobit  | 1,024 Bit | 1,000 Bit         |
-| 1 Megabit  | 1,024 Kb  | 1,000,000 Bit (1,000 Kilobit)    |
-| 1 Gigabit  | 1,024 Mb  | 1,000,000,000 Bit (1,000 Megabit) |
-| 1 Terabit  | 1,024 Gb  | 1,000,000,000,000 Bit (1,000 Gigabit)|
+| Names     | Equal to (Base 2) | Equal to (Base 10)                    |
+| --------- | ----------------- | ------------------------------------- |
+| 1 Kilobit | 1,024 Bit         | 1,000 Bit                             |
+| 1 Megabit | 1,024 Kb          | 1,000,000 Bit (1,000 Kilobit)         |
+| 1 Gigabit | 1,024 Mb          | 1,000,000,000 Bit (1,000 Megabit)     |
+| 1 Terabit | 1,024 Gb          | 1,000,000,000,000 Bit (1,000 Gigabit) |
 
 ### Ethernet Standard (IEEE 802.3)
 
-Tabel Ethernet Standard 
+Tabel Ethernet Standard
 
 | Speed    | Common Names     | IEEE Standard | Informal Name | Maximum Lenght Suport |
-|----------|------------------|---------------|---------------|-----------------------|
+| -------- | ---------------- | ------------- | ------------- | --------------------- |
 | 10 Mbps  | Ethernet         | 802.3i        | 10BASE-T      | 100 m                 |
 | 100 Mbps | Fast Ethernet    | 802.3u        | 100BASE-T     | 100 m                 |
 | 1 Gbps   | Gigabit Ethernet | 802.3ab       | 1000BASE-T    | 100 m                 |
@@ -108,12 +112,12 @@ Tabel Ethernet Standard
 
 Tabel Standard Kabel UTP secara umum.
 
-| Speed    | Ethernet Informal  Names | Cable Names |          
-|----------|--------------------------|-------------|
-| 10 Mbps  | 10BASE-T                 | Cat3        | 
-| 100 Mbps | 100BASE-T                | Cat5        | 
-| 1 Gbps   | 1000BASE-T               | Cat5e       | 
-| 10 Gbps  | 10GBASE-T                | Cat6a       |          
+| Speed    | Ethernet Informal  Names | Cable Names |
+| -------- | ------------------------ | ----------- |
+| 10 Mbps  | 10BASE-T                 | Cat3        |
+| 100 Mbps | 100BASE-T                | Cat5        |
+| 1 Gbps   | 1000BASE-T               | Cat5e       |
+| 10 Gbps  | 10GBASE-T                | Cat6a       |
 
 !!! info "UTP Cable Drawback"
 
@@ -132,7 +136,7 @@ Tabel Standard Kabel UTP secara umum.
 
 !!! info "Straight Through Cable (STP) Cable"
 
-- Straigth-throught Cable: Ujung kabel disambungkan ke pasangan pin yang sama. Kabel STP biasanya digunakan untuk menghubungkan perangkat jaringan yang berbeda seperti antara PC dengan Router, Router dengan Switch, dsb. 
+- Straigth-throught Cable: Ujung kabel disambungkan ke pasangan pin yang sama. Kabel STP biasanya digunakan untuk menghubungkan perangkat jaringan yang berbeda seperti antara PC dengan Router, Router dengan Switch, dsb.
 
 #### Crossover Cable
 
@@ -146,16 +150,16 @@ Tabel Standard Kabel UTP secara umum.
 
 Tabel pasangan Tx/Rx serta tipe Perangkat Jaringan nya
 
-| Device Type | Transmit Pin (Tx) | Recive Pins (Rx) |            
-|-------------|-------------------|------------------|
-| Router      | 1 and 2           | 3 and 6          | 
-| Firewall    | 1 and 2           | 3 and 6          | 
-| PC/Server    | 1 and 2           | 3 and 6          | 
-| Switch          | 3 and 6           | 1 and 2          |
+| Device Type | Transmit Pin (Tx) | Recive Pins (Rx) |
+| ----------- | ----------------- | ---------------- |
+| Router      | 1 and 2           | 3 and 6          |
+| Firewall    | 1 and 2           | 3 and 6          |
+| PC/Server   | 1 and 2           | 3 and 6          |
+| Switch      | 3 and 6           | 1 and 2          |
 
 #### Auto MDI-X
 
-Fitur yang bisa merubah atau menukar posisi Tx/Rx sehingga tidak perlu lagi memusingkan soal kabel straight-through atau crossover cable. 
+Fitur yang bisa merubah atau menukar posisi Tx/Rx sehingga tidak perlu lagi memusingkan soal kabel straight-through atau crossover cable.
 
 #### UTP Cable (1000BASE-T and 10GBASE-T)
 
@@ -163,7 +167,7 @@ Fitur yang bisa merubah atau menukar posisi Tx/Rx sehingga tidak perlu lagi memu
 
 !!! info
 
-- Setiap pasangan pin secara bidirectional artinya setiap pasangan pin dikhusukan untuk satu tugas. Tx atau Rx saja. 
+- Setiap pasangan pin secara bidirectional artinya setiap pasangan pin dikhusukan untuk satu tugas. Tx atau Rx saja.
 
 ### Fiber Cable
 
@@ -180,7 +184,7 @@ Fiber Optic Connections
 Tabel Standard Kabel Fiber Optic
 
 | Informal Name | IEEE Standard | Speed  | Cable Types               | Maximum Length       |
-|---------------|---------------|--------|---------------------------|----------------------|
+| ------------- | ------------- | ------ | ------------------------- | -------------------- |
 | 1000BASE-X    | 802.3z        | 1 Gbps | Multimode and Single-mode | 550 M (MM) 5 km (SM) |
 | 10GBASE-SR    | 802.3ae       | 10Gbps | Multimode                 | 400 m                |
 | 10GBASE-LR    | 802.3ae       | 10Gbps | Single-mode               | 10 km                |
@@ -196,7 +200,7 @@ Tabel Standard Kabel Fiber Optic
 Tabel perbandingan kabel UTP dengan Fiber Optic
 
 | UTP Cable                                                                             | Fiber Optics                                                                                                           |
-|---------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
+| ------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
 | Harga lebih murah dibandingan fiber optic                                             | Harga lebih mahal dibandingkan kabel UTP                                                                               |
 | Jarak jangkauan jauh lebih pendek dibandingkan kabel fiber optic (~100m)              | Jarak jangkauan jauh lebih panjang / luas dibandingkan kabel UTP                                                       |
 | Rentan terhadap Electromagnetic Interference (EMI)                                    | Tidak ada kerentanan terhadap Electromagnetic Interference (EMI)                                                       |
@@ -204,3 +208,37 @@ Tabel perbandingan kabel UTP dengan Fiber Optic
 | memancarkan kebocoran sinyal lemah di luar kabel yang dapat disalin (risiko keamanan) | Tidak memancarkan kebocoran sinyal lemah di luar kabel (tidak ada risiko keamanan)                                     |
 
 ## 4. OSI dan TCP/IP Model
+
+### OSI Model
+
+Gambar OSI Model beserta penjelasan masing-masing layer
+
+![osi-model](../assets/img/osi-model.PNG)
+
+#### Penjelasan Layer OSI Model
+
+| No  | OSI Layer          | Fungsi / Penjelasan                                                  | Unit Data |
+| --- | ------------------ | -------------------------------------------------------------------- | --------- |
+| 7   | Application Layer  | Proses aplikasi end-user (browser, email client, dll.)               | Data      |
+| 6   | Presentation Layer | Encryption (SSL/TLS), decryption, _compression_ dan formatting media               | Data      |
+| 5   | Session Layer      | Start atau stop session (manajemen sesi) dan mengontrol port         | Data      |
+| 4   | Transport Layer    | Memilih protokol (TCP/UDP), memecah paket menjadi beberapa bagian, _error handling_    | Segment   |
+| 3   | Network Layer      | IP addressing dan routing antar jaringan                             | Packet    |
+| 2   | Data Link Layer    | Media Access Control (MAC) addressing                                | Frame     |
+| 1   | Physical Layer     | Physical hardware (Fiber optics, RJ45), mentransmisikan sinyal fisik | Bits      |
+
+!!! note "OSI Model Mnemonics"
+
+    ```
+    All -> Application layer
+    People -> Presentation layer
+    Seem -> Session layer
+    To -> Transport layer
+    Need -> Network layer
+    Data -> Data layer
+    Processing -> Physical layer
+    ```
+
+### Tabel perbedaan OSI Model dan TCP/IP
+
+![osi-vs-tcp-ip](../assets/img/osi-vs-tcp-ip.PNG)

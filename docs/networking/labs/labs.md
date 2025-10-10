@@ -1,8 +1,8 @@
-## Lab Practice for CCNA 200-301
+# Lab Practice for CCNA 200-301
 
-### 1. Network Devices
+## 1. Network Devices
 
-#### Cisco Packet Tracer Introduction
+### Cisco Packet Tracer Introduction
 
 #### To Do
 
@@ -20,10 +20,8 @@
 > **Tip:** Connect the devices together using Packet Tracer's  
 > *"Automatically Choose Connection Type"* function.
 
-
 !!! example output "Lab day 1"
 ![labs_day 1](../assets/img/labs_day1.PNG)
-
 
 ### 2. Cable, Connectors and Ports
 
@@ -31,7 +29,7 @@
 
 - [x] Connect the network device together according to the table
 - [x] Use appropriate type of cable (crossover cable, straight throught cable, single mode fiber or multimode fiber)
-!!! note 
+!!! note
 - [x] Cisco Packet Tracer don't differentiate between single-mode or multimode fiber cable, but think about it which-one is appropriate. Hint: See the length of the device.
 
 !!! example "Lab day 2"

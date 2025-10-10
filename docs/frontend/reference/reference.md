@@ -1,3 +1,4 @@
+# Reference
+
 [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web)
-[Petani Kode](https://www.petanikode.com)
-[W3School]()
+[Web Development 2025](https://www.udemy.com/course/the-web-developer-bootcamp/)

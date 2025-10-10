@@ -1,6 +1,6 @@
 site_name: Notes
 
-theme: 
+theme:
   name: material
   features:
     - navigation.instant
@@ -8,7 +8,8 @@ theme:
     - navigation.instant.preview
     - navigation.tabs
     - navigation.sections
-    
+    - content.code.copy
+
 nav:
   - Home: index.md
   - Front-end:
@@ -16,7 +17,7 @@ nav:
       - HTML: frontend/html/html.md
       - CSS: frontend/css/css.md
       - Javascript: frontend/javascript/javascript.md
-      
+
   - Networking:
       - Getting Started: networking/Getting Started.md
       - Catatan: networking/notes/ccnaintro.md

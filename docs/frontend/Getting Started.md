@@ -1,7 +1,6 @@
 # Getting Started
 
-Catatan ini berisi rangkuman materi dan praktik yang berkaitan dengan pengembangan web (_front-end_) 
-
+Pada bagian ini berisi catatan dari Course Web Development 2025
 
 ## Daftar Isi
 
