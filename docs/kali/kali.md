@@ -1,217 +1,437 @@
-# Kali Linux – Command
-
-Berikut ini beberapa perintah dasar yang umum digunakan di Kali Linux.
+# Kali Linux – Basic Command
 
 ## List of Kali Linux Command
 
-### Linux Filesystem
+### Navigating the File System
 
-### Basic Command
+- `pwd`: preworking directory
 
-- `pwd`: Menampilkan direktori saat ini.
-
-!!! example "Penggunaan perintah `pwd`"
-
-    ```bash
-    pwd
-    ```
-
-- `whoami`: Menampilkan pengguna yang sedang aktif (baik user biasa atau root).
-
-!!! example "Penggunaan perintah `whoami`"
-
-    ```bash
-    whoami
-    ```
-
-- `cd`: Berpindah direktori.
-
-!!! example "Penggunaan perintah `cd`"
-
-    ```bash
-    cd newfolder
-    ```
-
-!!! info "Command `cd`"
-
-    ```
-    ..         → naik satu level folder
-    ../..      → naik dua level folder
-    ../../..   → naik tiga level folder, dan seterusnya
-    ```
-
-- `ls`: Melihat isi konten dari direktori saat ini (file dan subdirektori).
-
-!!! info "Command `ls`"
-    Untuk mendapatkan informasi lebih lengkap mengenai file atau direktori,
-    gunakan opsi tambahan seperti `-l` atau `-a`.
-
-!!! example "Contoh penggunaan `ls -l - a` atau `ls -la`"
-    ```bash
-    ls -l -a
-    # atau
-    ls -la
-    ```
-
-!!! info "Mendapatkan Bantuan"
-    Gunakan perintah `--help`, `-h`, atau `-?` untuk melihat petunjuk penggunaan perintah di Kali Linux.
-
-!!! info "Referensi Manual (Manual Pages)"
-    Gunakan perintah `man` diikuti nama command untuk melihat dokumentasi lengkap, misalnya:
-    ```bash
-    man ls
-    ```
+```bash
+┌──(kali㉿kali)-[~]
+└─$ pwd
+/home/kali
+```
 
 ---
 
-### Finding Files
+- `cd`: change directory
 
-- `locate`: Mencari lokasi file berdasarkan database file sistem. Gunakan perintah `updatedb` untuk mengupdate database file sistem.
-- `whereis`: Mencari lokasi file binary.
-- `which`: Mencari lokasi file binary dalam PATH Variable.
-- `find`: Mencari lokasi file secara lebih powerfull.
+```bash
+┌──(kali㉿kali)-[~]
+└─$ cd workout
+                                                                     
+┌──(kali㉿kali)-[~/workout]
+└─$ pwd
+/home/kali/workout
+```
 
-!!! info "`find` Basic Syntax"
+!!! note "for `cd` command"
 
-`find` `directory options` `expressions`
+- `cd ..` to move up one level from `/etc` or `/` (root)
+- `cd .. / ..` to move up two level from `/etc` or `/` (root)
+- `cd .. / ..  / .. ` to move up three level and so on from `/etc` or `/` (root)
 
-- `grep`: Mencari dan memanipulasi teks dalam sebuah file dan direktori di Kali Linux dengan menggunakan keyword spesifik.
+---
 
-### Modifying Files and Directories
+- `ls`: list of directory content
 
-#### Creating Files
+```bash
+┌──(kali㉿kali)-[/]
+└─$ ls
+bin   home            lib32       mnt   run   sys  vmlinuz
+boot  initrd.img      lib64       opt   sbin  tmp  vmlinuz.old
+dev   initrd.img.old  lost+found  proc  srv   usr
+etc   lib             media       root  swap  var
+```
 
-- `cat`: Membuat file di Linux.
-- `touch`
+---
 
-!!! example "Penggunaan perintah `cat`"
+`mkdir` : make directories
 
-    ```bash
-    cat > coba.txt
-    ```
+```bash
+┌──(kali㉿kali)-[~]
+└─$ mkdir Exercise
+                                                                             
+┌──(kali㉿kali)-[~]
+└─$ ls
+Desktop    Downloads  Music     Public     Videos
+Documents  Exercise   Pictures  Templates  workout
+                                                             
+```
 
-!!! info "Perintah `cat` di Kali Linux"
+---
 
-!!! example "Membuat file baru"
+- `rm` : remove files or directories
 
-    Basic _syntax_:
+```bash
+┌──(kali㉿kali)-[~]
+└─$ rm -r Exercise
+                                                                             
+┌──(kali㉿kali)-[~]
+└─$ ls
+Desktop    Downloads  Pictures  Templates  workout
+Documents  Music      Public    Videos
 
-    ```
-    cat > nama_file.extension file
-    ```
+```
 
-    ```bash
-    cat > coba.txt
-    ```
+---
 
-- Tekan `CTRL + D` untuk keluar dan kembali ke _prompt_ jika telah memasukkan isi file.
+- `rmdir` : remove empty directories
 
-!!! example "Menampilkan isi file"
+```bash
+┌──(kali㉿kali)-[~]
+└─$ rmdir Cat 
+                                                                             
+┌──(kali㉿kali)-[~]
+└─$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
+```
 
-    ```bash
-    cat coba.txt
-    ```
+!!! info "`cat` Command"
 
-- Perintah `cat` tanpa tanda `>` digunakan untuk melihat isi file.
+- if your file have space, you can do this `cat < "this is file name"`
+- if your file have dashed, you can do this `cat < -`
+- if your file have space and dashed, you can do this `cat < --"this is file name"--`
 
-!!! example "Menambahkan konten baru ke dalam file"
 
-    ```bash
-    cat >> coba.txt
-    ```
 
-- Perintah `cat` dengan tanda `>>` digunakan untuk menambahkan konten baru ke dalam file.
+---
 
-!!! example "_Overwrite_ file"
+- `cp` : copy files and directories
 
-    ```bash
-    cat > coba.txt
-    ```
+```bash
+┌──(kali㉿kali)-[~]
+└─$ cp text.txt Documents
+                                                                             
+┌──(kali㉿kali)-[~]
+└─$ cd Documents         
+                                                                             
+┌──(kali㉿kali)-[~/Documents]
+└─$ ls
+text.txt
 
-- Perintah `cat` dengan tanda `>` digunakan untuk meng-_overwrite_ file.
+```
 
-!!! info "Pembuatan file di Kali Linux"
+---
 
-- Secara teknis, pengguna bisa membuat file di Kali Linux baik dengan menambahkan _file extension_ atau tanpa _file extension_ sama sekali.
+- `mv` : move and/or (rename) files
 
-#### Creating Directory
+```bash
+┌──(kali㉿kali)-[~]
+└─$ mv text.txt Downloads
+                                                                             
+┌──(kali㉿kali)-[~]
+└─$ ls
+Desktop  Documents  Downloads  Music  Pictures  Public  Templates  Videos
 
-- `mkdir`: Membuat folder di Linux.
+┌──(kali㉿kali)-[~]
+└─$ cd Documents   
+                                                                
+┌──(kali㉿kali)-[~/Documents]
+└─$ ls
+text.txt
 
-!!! example "Penggunaan perintah `mkdir`"
+```
 
-    ```bash
-    mkdir newfolder
-    ```
+---
 
-!!! info "Navigasi ke Folder yang telah dibuat"
-    Gunakan perintah `cd` untuk berpindah ke folder atau direktori yang telah dibuat.
+- `locate` : find files by name, quickly
 
-    ```bash
-    cd newfolder
-    ```
+!!! info "Informatin for `locate` command"
 
-#### Copying Files
+- Use `updatedb` to update a database for `locate`
 
-`cp`: Meng-copy file.
+---
 
-Syntax dasar:
+`find` : search for files in a directory hierarchy
 
-cp [source_file] [destination]
+```bash
+┌──(kali㉿kali)-[~/Downloads]
+└─$ find text.txt
+text.txt
 
-!!! example "Penggunaan perintah `cp`"
+```
 
-    ```bash
-    cp newfile /home/momoi/newfolder
-    ```
+---
 
-!!! info "Perintah `cp`"
-    Jika ingin menyalin dan mengganti nama file nya, bisa dengan cara berikut.
+- `passwd` : change user password
 
-    ```bash
-    cp newfile /home/momoi/newfolder/newfile-copy
-    ```
+!!! note "For Command Help"
 
-#### Renaming File
+- use [`command name` `--help`] to get information about quick overview of usage and syntax for specific command
+- use [`man` `command name`] to get manual page for specific command
 
-`mv`: Memindahkan file dari satu direktori ke direktori yang lain atau mengganti nama file
+### Users and Privilages
 
-!!! example "Penggunaan perintah `mv`"
+- `chmod` : change file mode bits (change file permission)
 
-    ```bash
-    mv file-copy filecopy
-    ```
+```bash
+┌──(kali㉿kali)-[~]
+└─$ ls -la
 
-#### Removing File
+-rw-rw-r--  1 kali kali     6 Dec  2 01:00 hello.txt
 
-`rm`: Menghapus file
+┌──(kali㉿kali)-[~]
+└─$ chmod +rwx hello.txt
+                                                                             
+┌──(kali㉿kali)-[~]
+└─$ ls -la
 
-!!! example "Penggunaan perintah `rm`"
+-rwxrwxr-x  1 kali kali     6 Dec  2 01:00 hello.txt
 
-    ```bash
-    rm filecopy
-    ```
+```
 
-#### Removing Directory / Folder
+!!! info "Linux File Permission 101"
 
-`rmdir`: Menghapus direktori / folder
+---
 
-!!! example "Penggunaan perintah `rmdir`"
+- `adduser` : add or manipulate users
+(add new users)
 
-    ```bash
-    rmdir newfolder
-    ```
+```bash
+┌──(kali㉿kali)-[~]
+└─$ sudo su      
 
-!!! info "Catatan untuk penggunaan perintah `rmdir`"
+[sudo] password for kali: 
+┌──(root㉿kali)-[/home/kali]
+└─# adduser zero
 
-Pastikan direktori atau folder yang ingin dihapus telah kosong (tidak ada isian konten), karena kalau masih ada file / isian konten akan mengeluarkan _output_ error berikut
+```
 
-    rmdir: failed to remove 'newfolder': Directory not empty
+!!! info "Linux/Kali Linux File System"
 
-Atau bisa dengan menambahkan `-r` agar direktori serta file yang berada didalamnya akan terhapus semuanya.
+---
 
-!!! example "Menghapus direktori beserta isinya"
+- `su` : run a command with substitute user and group ID (switch to another user)
 
-    ```bash
-    rmdir newfolder -r
-    ```
+```bash
+┌──(root㉿kali)-[/home/kali]
+└─# su zero     
+
+┌──(zero㉿kali)-[/home/kali]
+└─$ man su
+
+```
+
+---
+
+`sudo` : execute a command as another user
+(allows a permitted user to execute a command as the superuser (root) or another user)
+
+```bash
+┌──(kali㉿kali)-[~]
+└─$ sudo su    
+
+[sudo] password for kali: 
+┌──(root㉿kali)-[/home/kali]
+└─# 
+```
+
+### Common Network Commands
+
+`ifconfig` : configure a network interface
+
+```bash
+┌──(kali㉿kali)-[~]
+└─$ ifconfig
+
+---
+
+```
+
+`ip a` : show / manipulate routing, network device, interface, tunnels. It replaces the earlier and now deprecated `ifconfig` program
+
+```bash
+┌──(kali㉿kali)-[~]
+└─$ ip a
+```
+
+
+`iwconfig` : configure wireless network interface
+
+```bash
+┌──(kali㉿kali)-[~]
+└─$ ifconfig
+```
+
+`iw a` : show / manipulate wireless device and their configuration.
+
+```bash
+┌──(kali㉿kali)-[~]
+└─$ iw a
+```
+
+---
+
+`ping` : send ICMP ECHO_REQUEST to network hosts
+
+```bash
+┌──(kali㉿kali)-[~]
+└─$ ping
+```
+
+---
+
+`netstat` : Print network connections, routing tables, interface statistics, masquerade connections, and multicast memberships
+
+```bash
+┌──(kali㉿kali)-[~]
+└─$ netstat
+```
+
+### Viewing, Creating, and Editing Files
+
+- `echo` : display a line of text
+
+```bash
+┌──(kali㉿kali)-[~]
+└─$ echo "Hello World" > hello.txt
+                                                                             
+┌──(kali㉿kali)-[~]
+└─$ cat hello.txt              
+Hello World
+
+┌──(kali㉿kali)-[~]
+└─$ echo "Hello Hello World" >> hello.txt
+                                                                             
+┌──(kali㉿kali)-[~]
+└─$ cat hello.txt
+Hello World
+Hello Hello World
+```
+
+!!! info "`echo` Command"
+
+`>>` use that symbol to append output in existing file, if use `>` the file will be overwriten if already exist
+
+- `touch` : change file timestamps and create new empty file
+
+```bash
+┌──(kali㉿kali)-[~]
+└─$ touch newfile.txt
+                                                                             
+┌──(kali㉿kali)-[~]
+└─$ ls    
+Desktop    Downloads  Music        Pictures  Templates
+Documents  hello.txt  newfile.txt  Public    Videos
+```
+
+---
+
+- `cat` : concatenate files and print on the standard output (view, create and combine file content directly from the terminal)
+
+```bash
+┌──(kali㉿kali)-[~]
+└─$ cat newfile.txt
+Hello world, this is example of using touch and nano command in Kali Linux
+
+```
+
+---
+
+- `du` : estimate file space usage
+
+```bash
+┌──(kali㉿kali)-[~]
+└─$ du Downloads
+8       Downloads
+                     
+```
+
+- `find` : search for files in a directory hierarchy
+
+```bash
+┌──(kali㉿kali)-[~]
+└─$ find ~ -name "hello.txt" 
+/home/kali/hello.txt
+```
+
+!!! info "`find` Command"
+
+`find [options] [path] [expression]`
+
+---
+
+- `file` : 
+
+```bash
+┌──(kali㉿kali)-[~]
+└─$ file Downloads          
+Downloads: directory
+```
+
+### Starting and Stopping Services
+
+- `service` : run a System V init script
+
+```bash
+┌──(kali㉿kali)-[~]
+└─$ sudo service apache2 start
+```
+
+- `systemctl` : Control the systemd system and service manager
+
+```bash
+┌──(kali㉿kali)-[~]
+└─$ sudo systemctl disable  apache2
+Synchronizing state of apache2.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+Executing: /usr/lib/systemd/systemd-sysv-install disable apache2
+Removed '/etc/systemd/system/multi-user.target.wants/apache2.service'.
+                                                                             
+┌──(kali㉿kali)-[~]
+└─$ sudo systemctl status apache2
+○ apache2.service - The Apache HTTP Server
+     Loaded: loaded (/usr/lib/systemd/system/apache2.service; disabled; pres>
+     Active: inactive (dead)
+       Docs: https://httpd.apache.org/docs/2.4/
+
+Dec 06 01:12:08 kali systemd[1]: Starting apache2.service - The Apache HTTP >
+Dec 06 01:12:08 kali apachectl[5840]: AH00558: apache2: Could not reliably d>
+Dec 06 01:12:08 kali systemd[1]: Started apache2.service - The Apache HTTP S>
+Dec 06 01:14:09 kali systemd[1]: Stopping apache2.service - The Apache HTTP >
+Dec 06 01:14:09 kali apachectl[7218]: AH00558: apache2: Could not reliably d>
+Dec 06 01:14:09 kali systemd[1]: apache2.service: Killing process 5852 (apac>
+Dec 06 01:14:09 kali systemd[1]: apache2.service: Killing process 5853 (apac>
+Dec 06 01:14:09 kali systemd[1]: apache2.service: Deactivated successfully.
+Dec 06 01:14:09 kali systemd[1]: Stopped apache2.service - The Apache HTTP S>
+lines 1-14/14 (END)
+
+```
+
+### Install and Updating Tools
+
+- update and upgrade kali linux machine
+
+```bash
+┌──(root㉿kali)-[/home/kali]
+└─# apt update && apt  upgrade
+```
+
+---
+
+- installing software / package
+
+```bash
+┌──(root㉿kali)-[/home/kali]
+└─# apt install postgresql-18    
+```
+
+---
+
+- Installing tools / clone repository from Github
+
+```bash
+┌──(root㉿kali)-[/home/kali]
+└─# git [repository link]
+
+
+
+```
+
+### Scripting with Bash
+
+## Resource
+
+- <https://github.com/shreyaschavhan/linux-commands-cheatsheet>
+- <https://www.youtube.com/watch?v=lZAoFs75_cs>
+- Kali Linux User Command Manual Page

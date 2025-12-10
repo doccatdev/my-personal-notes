@@ -5,5 +5,4 @@ Catatan ini berisi materi mengenai jaringan komputer. Alasan utama saya mempelaj
 ## Daftar Isi
 
 1. [Catatan](notes/ccnaintro.md)
-1. [Labs](labs/labs.md)
-1. [Reference](reference/reference.md)
+2. [Reference](reference/reference.md)

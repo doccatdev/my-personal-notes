@@ -9,6 +9,7 @@ theme:
     - navigation.tabs
     - navigation.sections
     - content.code.copy
+    - content.tabs.link
 
 nav:
   - Home: index.md
@@ -17,13 +18,13 @@ nav:
       - HTML: frontend/html/html.md
       - CSS: frontend/css/css.md
       - Javascript: frontend/javascript/javascript.md
-
-  - Networking:
+  - Computer Networking:
       - Getting Started: networking/Getting Started.md
       - Catatan: networking/notes/ccnaintro.md
-      - Labs: networking/labs/labs.md
   - Kali Linux:
       - Kali Linux Command: kali/kali.md
+  - Python:
+      - Python: python/python.md
   - About:
       - Notes to Reader: about/notes.md
 
